@@ -1,0 +1,61 @@
+C:\Users\Chris\Desktop\games\Grand Theft Auto.url
+E:\Games\Installed\Half-Life 2\hl2.exe
+E:\Games\Installed\Hitman Absolution\HMA.exe
+C:\Users\Chris\Desktop\games\Just Cause 2 Multiplayer Mod.url
+C:\Users\Chris\Desktop\games\Just Cause 2.url
+C:\Users\Chris\Desktop\games\Just Cause.url
+E:\Games\Installed\Mercenaries 2\Mercenaries2.exe
+C:\Users\Chris\Desktop\games\Metro 2033.url
+E:\Games\Installed\Need for Speed Most Wanted\NFS13.exe
+E:\Games\Installed\Nitronic Rush\NitronicRush.exe
+E:\Games\Installed\Prototype\prototypef.exe
+E:\Games\Installed\PROTOTYPE 2\prototype2.exe
+E:\Games\Installed\RedAlert1_Online\RA1MPLauncher.exe
+E:\Games\Installed\Rocket League\Binaries\Win32\RocketLeague.exe
+E:\Games\Installed\Rust.Client.Experimental.v1309.x64-Kortal\Rust_Launcher.exe
+E:\Games\Installed\Saints Row IV\SaintsRowIV.exe
+E:\Games\Installed\Middle Earth Shadow of Mordor\x64\ShadowOfMordor.exe
+E:\Games\Installed\Sleeping Dogs\HKShip.exe
+E:\Games\Installed\Sniper Elite 3\bin\SniperElite3.exe
+E:\Games\Installed\SniperEliteV2\bin\SniperEliteV2.exe
+E:\Games\Installed\Sniper Ghost Warrior 2\Bin32\SniperGhostWarrior2.exe
+E:\Games\Installed\Stranded.Deep.Alpha.v0.03\Stranded_Deep_x64.exe
+E:\Games\Installed\The Elder Scrolls V Skyrim\TESV.exe
+E:\Games\Installed\The Forest\TheForest.exe
+E:\Games\Installed\Tombraider\TombRaider.exe
+C:\Users\Chris\Desktop\games\War Thunder.url
+E:\Games\Installed\Wolfenstein The New Order\WolfNewOrder_x64.exe
+E:\Games\Installed\Alan Wake\AlanWake.exe
+E:\Games\Installed\Apache Air Assault\launcher.exe
+E:\Games\Installed\Arma III\arma3.exe
+E:\Games\Installed\Assassins Creed 3\AC3SP.exe
+E:\Games\Installed\Assassins Creed IV Black Flag\AC4BFSP.exe
+E:\Games\Installed\Assassins Creed Rev\ACRSP.exe
+E:\Games\Installed\Origin\gamesloc\Battlefield 3\bf3.exe
+E:\Games\Installed\Origin\gamesloc\Battlefield Bad Company 2\BFBC2Game.exe
+E:\Games\Installed\Besiege.v0.10.with.Hotfix.1\Besiege.exe
+E:\Games\Installed\BioShock Infinite\Binaries\Win32\BioShockInfinite.exe
+E:\Games\Installed\Black Ops\BlackOps.exe
+E:\Games\Installed\Far Cry 3 Blood Dragon\bin\fc3_blooddragon_d3d11.exe
+E:\Games\Installed\Command & Conquer The First Decade\Launcher\TFDLauncher.exe
+E:\Games\Installed\COD4\iw3sp.exe
+E:\Games\Installed\Call of Duty World at War\Call of Duty - World at War\CoDWaW.exe
+E:\Games\Installed\Crysis 3\Bin32\Crysis3.exe
+E:\Games\Installed\Dishonored\Binaries\Win32\Dishonored.exe
+E:\Games\Installed\Dying Light\DyingLightGame.exe
+E:\Games\Installed\Empire Earth II\EE2X.exe
+E:\Games\Installed\Empire Earth II\EE2.exe
+E:\Games\Installed\Fallout New Vegas\FalloutNVLauncher.exe
+E:\Games\Installed\Far Cry 2\bin\FarCry2.exe
+E:\Games\Installed\Far Cry 3\bin\farcry3_d3d11.exe
+E:\Games\Installed\Far Cry 4\bin\FarCry4.exe
+E:\Games\Installed\Garrys Mod\Garrys_Mod.exe
+E:\Games\Installed\Goat Simulator\Binaries\Win32\GoatGame-Win32-Shipping.exe
+C:\Users\Chris\Desktop\games\Grand Theft Auto 2.url
+C:\Users\Chris\Desktop\games\Grand Theft Auto Episodes from Liberty City.url
+C:\Users\Chris\Desktop\games\Grand Theft Auto III.url
+C:\Users\Chris\Desktop\games\Grand Theft Auto IV.url
+C:\Users\Chris\Desktop\games\Grand Theft Auto San Andreas.url
+C:\Users\Chris\Desktop\games\Grand Theft Auto V.url
+C:\Users\Chris\Desktop\games\Grand Theft Auto Vice City.url
+E:\Games\Installed\The Elder Scrolls V Skyrim - Legendary Edition\skse_loader.exe

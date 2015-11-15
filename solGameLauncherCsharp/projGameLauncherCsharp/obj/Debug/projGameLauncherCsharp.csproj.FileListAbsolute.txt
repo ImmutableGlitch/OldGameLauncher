@@ -1,0 +1,193 @@
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe.config
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.pdb
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csprojResolveAssemblyReference.cache
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Form1.resources
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Properties.Resources.resources
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.GenerateResource.Cache
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.exe
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.pdb
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmGame.resources
+Z:\Programming\DotNET\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmMenu.resources
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe.config
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.exe
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.pdb
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.pdb
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csprojResolveAssemblyReference.cache
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Form1.resources
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmGame.resources
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmMenu.resources
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Properties.Resources.resources
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.GenerateResource.Cache
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.pdb
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.TestHTML.resources
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Form2.resources
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\log4net.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Zlib.Portable.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.pdb
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.pdb
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.pdb
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.pdb
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\log4net.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Zlib.Portable.xml
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\Interop.IWshRuntimeLibrary.dll
+E:\Programming\.NET Projects mine\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.ResolveComReference.cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe.config
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\Interop.IWshRuntimeLibrary.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.ResolveComReference.cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.exe
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\log4net.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Zlib.Portable.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\log4net.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\bin\Debug\Zlib.Portable.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csprojResolveAssemblyReference.cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Form1.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Form2.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmGame.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmMenu.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Properties.Resources.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.TestHTML.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpCHECK\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.GenerateResource.Cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe.config
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\Interop.IWshRuntimeLibrary.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.ResolveComReference.cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.exe
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\log4net.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Zlib.Portable.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\log4net.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\bin\Debug\Zlib.Portable.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csprojResolveAssemblyReference.cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmGame.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmMenu.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Properties.Resources.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.GenerateResource.Cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmIconExtract.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharpKEEP\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmGameDatabaseMiner.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe.config
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\Interop.IWshRuntimeLibrary.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.ResolveComReference.cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.exe
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\log4net.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Zlib.Portable.dll
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Core.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.Customsearch.v1.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Google.Apis.PlatformServices.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.pdb
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\HtmlAgilityPack.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\log4net.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Newtonsoft.Json.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Extensions.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\System.Net.Http.Primitives.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\Zlib.Portable.xml
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csprojResolveAssemblyReference.cache
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmIconExtract.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmGame.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmMenu.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.Properties.Resources.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.frmGameDatabaseMiner.resources
+E:\Programming\DotNET\Projects\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.GenerateResource.Cache

@@ -51,8 +51,8 @@ namespace projGameLauncherCsharp
             pnlEdit.Hide();
 
             //Set colour and flow panel layout
-            this.BackColor = Color.FromArgb(39, 40, 34);
-            flo.BackColor = Color.FromArgb(48, 47, 44);
+            this.BackColor = Color.FromArgb(37, 37, 37);
+            flo.BackColor = Color.FromArgb(49, 49, 49);
 
             flo.FlowDirection = FlowDirection.LeftToRight;
             flo.WrapContents = true;
@@ -230,53 +230,55 @@ namespace projGameLauncherCsharp
 
         private void flo_DragDrop(object sender, DragEventArgs e)
         {
+            //Store files that are dropped on to the form
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
-            //TODO - PERHAPS USING THE LIBRARY BELLOW ALLOWS .INK SHORTCUTS TO OPEN OR TO GET THE SHORTCUT ORIGINAL PATH?? CHECK STEAM GAME ISSUE 
+            
+            //For each file
             foreach (string strFile in files)
             {
-                string f = strFile;
-
+                string location = "";
                 try
                 {
-                    if (System.IO.File.Exists(f))
+                    if (System.IO.File.Exists(strFile))
                     {
-                        // WshShellClass shell = new WshShellClass();
-                        IWshRuntimeLibrary.WshShell shell = new IWshRuntimeLibrary.WshShell(); //Create a new WshShell Interface
-                        IWshRuntimeLibrary.IWshShortcut link = (IWshRuntimeLibrary.IWshShortcut)shell.CreateShortcut(f); //Link the interface to our shortcut
-
-                        //MessageBox.Show(link.TargetPath); //Show the target in a MessageBox using IWshShortcut
-
-                        f = link.TargetPath;
+                        //Create a new WshShell COM Object
+                        IWshRuntimeLibrary.WshShell shell = new IWshRuntimeLibrary.WshShell(); 
+                        //Links the dropped file to the COM Object, providing access to game .exe instead of .ink
+                        IWshRuntimeLibrary.IWshShortcut link = (IWshRuntimeLibrary.IWshShortcut)shell.CreateShortcut(strFile); 
+                        
+                        //store actual game location
+                        location = link.TargetPath;
 
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Adding steam games wont work.\n" + ex.Message);
+                    //MessageBox.Show("Adding steam shortcuts wont allow access to original file.");
+                    Debug.WriteLine(ex.Message);
                 }
 
-                //if there is no room left in array then resize
+                //Resize array if needed
                 if (pointerGames == arrNameLocPic.GetLength(1))
                 {
                     arrNameLocPic = resizeArray(arrNameLocPic);
                 }
 
-                //TODO - REMOVES SHORTCUT LABEL FOR PRETTY PRINT?? 
-                string fileName = Path.GetFileNameWithoutExtension(f);
+                //Select only the filename
+                string fileName = Path.GetFileNameWithoutExtension(location);
 
-                if (fileName.Contains("hortcut"))
+                //Remove 'Shortcut' text if exists
+                if (fileName.Contains("Shortcut"))
                 {
                     int startPoint = fileName.LastIndexOf('.');
                     fileName = fileName.Remove(startPoint, fileName.Length - startPoint);
                 }
 
-
-
+                //Call method which cleans file names
                 arrNameLocPic[0, pointerGames] = AddSpacesToSentence(fileName);
-                arrNameLocPic[1, pointerGames] = f; //gets loc
+                arrNameLocPic[1, pointerGames] = location;
 
                 //TODO - SCAN THROUGH ALL THIS STUFF, used to download images from theGameDBs.net although not reliable. Use Google API or custom web parsing
-
+                #region editMe
                 ////start database stuff
                 ////------------------------------------------------
 
@@ -360,25 +362,24 @@ namespace projGameLauncherCsharp
                 //}
                 ////------------------------------------------------
                 ////end database stuff
+                #endregion
 
-                arrNameLocPic[2, pointerGames] = Directory.GetCurrentDirectory() + @"\icons\" + pointerGames.ToString() + ".bmp";
+                string iconPath = Directory.GetCurrentDirectory() + @"\icons\" + pointerGames.ToString() + ".bmp";
+                arrNameLocPic[2, pointerGames] = iconPath;
 
                 try
                 {
-                    //TODO - stores icon cache, will be redundant once images/steamgrids replace it
-                    File.Delete(pointerGames.ToString() + ".bmp");
-
-                    Icon imageICO = Icon.ExtractAssociatedIcon(f);
+                    //TODO - stores icon cache, will be redundant once images/steamgrids functionality replace it
+                    //delete existing icon may not be needed, file would simply be overwritten
+                    File.Delete(iconPath);
+                    Icon imageICO = Icon.ExtractAssociatedIcon(location);
                     Bitmap imageBMP = imageICO.ToBitmap();
-                    imageBMP.Save(Directory.GetCurrentDirectory() + @"\icons\" + pointerGames.ToString() + ".bmp");
-                    imageBMP = null;
-
-                    //Icon.ExtractAssociatedIcon(f).ToBitmap().Save(pointerGames.ToString() + ".bmp"); //save icon as file
+                    imageBMP.Save(iconPath);
                 }
                 catch (Exception ex)
                 {
                     //TODO - FIND OUT WHY THIS ERROR IS ACTUALLY OCCURING 
-                    Debug.Write(ex.Message);
+                    Debug.WriteLine(ex.Message);
                     MessageBox.Show("Exit and reopen the app before adding more games. Error Message: " + ex.Message);
                 }
 

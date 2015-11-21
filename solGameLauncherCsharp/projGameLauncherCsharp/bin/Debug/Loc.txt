@@ -1,3 +1,5 @@
+E:\Games\Installed\Assassins Creed 3\AC3SP.exe
+E:\Games\Installed\Assassins Creed IV Black Flag\AC4BFSP.exe
 E:\Games\Installed\Apache Air Assault\launcher.exe
 C:\Program Files (x86)\AssaultCube\assaultcube.bat
 E:\Games\Installed\Origin\gamesloc\Battlefield 3\bf3.exe
@@ -31,26 +33,3 @@ E:\Games\Installed\Sniper Ghost Warrior 2\Bin32\SniperGhostWarrior2.exe
 E:\Games\Installed\The Elder Scrolls V Skyrim - Legendary Edition\SkyrimLauncher.exe
 E:\Games\Installed\The Forest\TheForest.exe
 E:\Games\Installed\Tombraider\TombRaider.exe
-E:\Games\Installed\Assassins Creed 3\AC3SP.exe
-E:\Games\Installed\Assassins Creed IV Black Flag\AC4BFSP.exe
-E:\Random\SSD\Desktop\Games\Steam Games\Arma 3.url
-E:\Random\SSD\Desktop\Games\Steam Games\Arma Cold War Assault.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto 2.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto Episodes from Liberty City.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto III.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto IV.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto San Andreas.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto V.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto Vice City.url
-E:\Random\SSD\Desktop\Games\Steam Games\Grand Theft Auto.url
-E:\Random\SSD\Desktop\Games\Steam Games\H1Z1.url
-E:\Random\SSD\Desktop\Games\Steam Games\Heroes & Generals.url
-E:\Random\SSD\Desktop\Games\Steam Games\Just Cause 2 Multiplayer Mod.url
-E:\Random\SSD\Desktop\Games\Steam Games\Just Cause 2.url
-E:\Random\SSD\Desktop\Games\Steam Games\Just Cause.url
-E:\Random\SSD\Desktop\Games\Steam Games\Metro 2033.url
-E:\Random\SSD\Desktop\Games\Steam Games\PlanetSide 2.url
-E:\Random\SSD\Desktop\Games\Steam Games\Team Fortress 2.url
-E:\Random\SSD\Desktop\Games\Steam Games\War Thunder.url
-E:\Games\Installed\The Forest\TheForest.exe
-E:\Games\Installed\Apache Air Assault\launcher.exe

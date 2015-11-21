@@ -1,56 +1,35 @@
-launcher
-assaultcube
-bf3
-B F B C2 Game
+AC3SP
+AC4BFSP
+Launcher
+Assaultcube
+Bf 3
+BFBC2Game
 Bio Shock Infinite
-T F D Launcher
-iw3sp
-Co D Wa W
-Crysis3
+TFDLauncher
+Iw 3sp
+Co DWa W
+Crysis 3
 Dishonored
 Dying Light Game
-E E2
-E E2 X
-Fallout N V Launcher
-Far Cry4
-fc3_blooddragon_d3d11
-Garrys_ Mod
-hl2
-N F S13
-iw3mp
-iw3sp
-prototype2
-prototypef
+EE2
+EE2X
+Fallout NVLauncher
+Far Cry 4
+Fc 3_blooddragon_d 3d 11
+Garrys_Mod
+Hl 2
+NFS13
+Iw 3mp
+Iw 3sp
+Prototype 2
+Prototypef
 Rocket League
-Saints Row I V
+Saints Row IV
 Shadow Of Mordor
-H K Ship
-Sniper Elite3
+HKShip
+Sniper Elite 3
 Sniper Elite V2
-Sniper Ghost Warrior2
+Sniper Ghost Warrior 2
 Skyrim Launcher
 The Forest
 Tomb Raider
-A C3 S P
-A C4 B F S P
-Arma 3
-Arma Cold War Assault
-Grand Theft Auto 2
-Grand Theft Auto Episodes from Liberty City
-Grand Theft Auto I I I
-Grand Theft Auto I V
-Grand Theft Auto San Andreas
-Grand Theft Auto V
-Grand Theft Auto Vice City
-Grand Theft Auto
-H1 Z1
-Heroes & Generals
-Just Cause 2 Multiplayer Mod
-Just Cause 2
-Just Cause
-Metro 2033
-Planet Side 2
-Team Fortress 2
-War Thunder
-The Forest
-launcher

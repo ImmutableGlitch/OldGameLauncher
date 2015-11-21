@@ -217,11 +217,20 @@ namespace projGameLauncherCsharp
             if (string.IsNullOrWhiteSpace(text))
                 return "";
             StringBuilder newText = new StringBuilder(text.Length * 2);
-            newText.Append(text[0]);
+            newText.Append(Char.ToUpper(text[0]));
             for (int i = 1; i < text.Length; i++)
             {
-                if (char.IsUpper(text[i]) && text[i - 1] != ' ')
+                //If this character is uppercase and the previous char isn't upper or a space
+                //Then begin a new word
+                if (char.IsUpper(text[i]) && text[i - 1] != ' ' && char.IsLower(text[i - 1]))
+                {
                     newText.Append(' ');
+                }
+                    //would change Battlefield3 to Battlefield 3
+                else if (char.IsNumber(text[i]) && char.IsLower(text[i - 1]))
+                {
+                    newText.Append(' ');
+                }
                 newText.Append(text[i]);
             }
             return newText.ToString();
@@ -393,11 +402,19 @@ namespace projGameLauncherCsharp
             CallGenerate();
         }
 
+        private void PaintBorderlessGroupBox(object sender, PaintEventArgs p)
+        {
+            GroupBox box = (GroupBox)sender;
+            
+            //Borderless
+            //p.Graphics.Clear(box.Parent.BackColor);
+
+            p.Graphics.Clear(Color.FromArgb(37,37,37));
+            p.Graphics.DrawString(box.Text, box.Font, Brushes.White, 0, 0);
+        }
+
         private void Generate(int tagIndex)
         {
-
-
-
             PictureBox btn = new PictureBox();
             btn.Click += new EventHandler(GameClickEvent);
             btn.Tag = tagIndex;
@@ -440,6 +457,7 @@ namespace projGameLauncherCsharp
 
             //TODO - WHY AM I USING GROUPBOX 
             GroupBox groupBox = new GroupBox();
+            groupBox.Paint += PaintBorderlessGroupBox;
             groupBox.Text = arrNameLocPic[0, tagIndex];
             groupBox.ForeColor = Color.White;
             groupBox.Size = new Size(236, 125);

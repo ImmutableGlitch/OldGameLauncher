@@ -519,12 +519,6 @@ namespace projGameLauncherCsharp
             flo.Enabled = boolButton;
         }
 
-        private void btnMenu_Click(object sender, EventArgs e)
-        {
-            frmMenu foo = new frmMenu();
-            foo.Show();
-            this.Hide();
-        }
 
         private void btnMenu_MouseEnter(object sender, EventArgs e)
         {
@@ -843,6 +837,9 @@ namespace projGameLauncherCsharp
             this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
             this.Top = (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2;
 
+            optionPanel.Top = (this.Height - optionPanel.Height) / 2;
+            optionPanel.Left = (this.Width - optionPanel.Width) / 2;
+
             lblNumOfGames.Location = new Point((this.Width - lblNumOfGames.Width) / 2, lblNumOfGames.Location.Y);
         }
 
@@ -919,5 +916,46 @@ namespace projGameLauncherCsharp
         }
 
         #endregion
+
+        private void btnMenuOptions(object sender, EventArgs e)
+        {
+            optionPanel.Show();
+            toggleButtons();
+        }
+
+        private void cboOption_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (cboOption.SelectedText)
+            {
+                case "Games":
+                    //use generate method with game text files
+                    break;
+
+                case "Programs":
+                    //use generate method with program text files
+                    break;
+
+                case "Other":
+                    //use text files which holds misc items
+                    break;
+
+                default:
+                    MessageBox.Show("Selected nothing?");
+                    break;
+            }
+        }
+
+        private void frmGame_Click(object sender, EventArgs e)
+        {
+            frmMenu foo = new frmMenu();
+            foo.Show();
+            this.Hide();
+        }
+
+        private void btnCloseMenu_Click(object sender, EventArgs e)
+        {
+            optionPanel.Hide();
+            toggleButtons();
+        }
     }
 }

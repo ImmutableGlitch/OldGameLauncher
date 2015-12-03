@@ -65,6 +65,10 @@
             this.btnEdit = new System.Windows.Forms.PictureBox();
             this.btnAddGame = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.optionPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboOption = new System.Windows.Forms.ComboBox();
+            this.btnCloseMenu = new System.Windows.Forms.PictureBox();
             this.pnlEdit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseEditPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditPanel)).BeginInit();
@@ -76,6 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddGame)).BeginInit();
+            this.optionPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCloseMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // Label2
@@ -399,7 +405,7 @@
             this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnMenu.TabIndex = 34;
             this.btnMenu.TabStop = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.btnMenu.Click += new System.EventHandler(this.btnMenuOptions);
             this.btnMenu.MouseEnter += new System.EventHandler(this.btnMenu_MouseEnter);
             this.btnMenu.MouseLeave += new System.EventHandler(this.btnMenu_MouseLeave);
             // 
@@ -435,13 +441,62 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // optionPanel
+            // 
+            this.optionPanel.BackColor = System.Drawing.Color.Blue;
+            this.optionPanel.Controls.Add(this.btnCloseMenu);
+            this.optionPanel.Controls.Add(this.label1);
+            this.optionPanel.Controls.Add(this.cboOption);
+            this.optionPanel.Location = new System.Drawing.Point(908, 103);
+            this.optionPanel.Name = "optionPanel";
+            this.optionPanel.Size = new System.Drawing.Size(351, 130);
+            this.optionPanel.TabIndex = 37;
+            this.optionPanel.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Blue;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label1.Location = new System.Drawing.Point(59, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(239, 30);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Select an option below:";
+            // 
+            // cboOption
+            // 
+            this.cboOption.FormattingEnabled = true;
+            this.cboOption.Items.AddRange(new object[] {
+            "Games",
+            "Programs",
+            "Other"});
+            this.cboOption.Location = new System.Drawing.Point(19, 69);
+            this.cboOption.Name = "cboOption";
+            this.cboOption.Size = new System.Drawing.Size(310, 21);
+            this.cboOption.TabIndex = 0;
+            this.cboOption.SelectedIndexChanged += new System.EventHandler(this.cboOption_SelectedIndexChanged);
+            // 
+            // btnCloseMenu
+            // 
+            this.btnCloseMenu.Image = global::projGameLauncherCsharp.Properties.Resources.x;
+            this.btnCloseMenu.Location = new System.Drawing.Point(331, 3);
+            this.btnCloseMenu.Name = "btnCloseMenu";
+            this.btnCloseMenu.Size = new System.Drawing.Size(17, 17);
+            this.btnCloseMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCloseMenu.TabIndex = 19;
+            this.btnCloseMenu.TabStop = false;
+            this.btnCloseMenu.Click += new System.EventHandler(this.btnCloseMenu_Click);
+            // 
             // frmGame
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(850, 478);
+            this.ClientSize = new System.Drawing.Size(1289, 478);
+            this.Controls.Add(this.optionPanel);
             this.Controls.Add(this.btnGameDir);
             this.Controls.Add(this.btnEnlarge);
             this.Controls.Add(this.btnMenu);
@@ -457,6 +512,7 @@
             this.Text = "frmGame";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGame_FormClosing);
             this.Load += new System.EventHandler(this.frmGame_Load);
+            this.DoubleClick += new System.EventHandler(this.frmGame_Click);
             this.MouseEnter += new System.EventHandler(this.frmGame_MouseEnter);
             this.pnlEdit.ResumeLayout(false);
             this.pnlEdit.PerformLayout();
@@ -471,6 +527,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddGame)).EndInit();
+            this.optionPanel.ResumeLayout(false);
+            this.optionPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCloseMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -513,5 +572,9 @@
         private System.Windows.Forms.PictureBox btnCloseAddPanel;
         private System.Windows.Forms.PictureBox btnCloseEditPanel;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Panel optionPanel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cboOption;
+        private System.Windows.Forms.PictureBox btnCloseMenu;
     }
 }

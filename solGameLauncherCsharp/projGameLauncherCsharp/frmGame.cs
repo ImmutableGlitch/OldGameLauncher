@@ -51,8 +51,13 @@ namespace projGameLauncherCsharp
             pnlEdit.Hide();
 
             //Set colour and flow panel layout
-            this.BackColor = Color.FromArgb(37, 37, 37);
-            flo.BackColor = Color.FromArgb(49, 49, 49);
+            //this.BackColor = Color.FromArgb(37, 37, 37);
+            this.BackColor = Color.FromArgb(21, 71, 0);//green
+            this.BackColor = Color.FromArgb(3, 32, 53);//blue
+            
+            //flo.BackColor = Color.FromArgb(49, 49, 49);
+            flo.BackColor = Color.FromArgb(44, 108, 17);//green
+            flo.BackColor = Color.FromArgb(17, 53, 81);//blue
 
             flo.FlowDirection = FlowDirection.LeftToRight;
             flo.WrapContents = true;
@@ -373,21 +378,22 @@ namespace projGameLauncherCsharp
                 ////end database stuff
                 #endregion
 
-                string iconPath = Directory.GetCurrentDirectory() + @"\icons\" + pointerGames.ToString() + ".bmp";
+                //use filename as bmp image name
+                string iconPath = Directory.GetCurrentDirectory() + @"\icons\" + arrNameLocPic[0, pointerGames] + ".bmp";
                 arrNameLocPic[2, pointerGames] = iconPath;
 
                 try
                 {
                     //TODO - stores icon cache, will be redundant once images/steamgrids functionality replace it
                     //delete existing icon may not be needed, file would simply be overwritten
-                    File.Delete(iconPath);
+                    //File.Delete(iconPath);
                     Icon imageICO = Icon.ExtractAssociatedIcon(location);
                     Bitmap imageBMP = imageICO.ToBitmap();
                     imageBMP.Save(iconPath);
                 }
                 catch (Exception ex)
                 {
-                    //TODO - FIND OUT WHY THIS ERROR IS ACTUALLY OCCURING 
+                    //TODO - FIND OUT WHY THIS ERROR IS ACTUALLY OCCURING
                     Debug.WriteLine(ex.Message);
                     MessageBox.Show("Exit and reopen the app before adding more games. Error Message: " + ex.Message);
                 }
@@ -409,8 +415,10 @@ namespace projGameLauncherCsharp
             //Borderless
             //p.Graphics.Clear(box.Parent.BackColor);
 
-            p.Graphics.Clear(Color.FromArgb(37,37,37));
+            //p.Graphics.Clear(Color.FromArgb(37,37,37));
+            p.Graphics.Clear(Color.FromArgb(3, 32, 53));
             p.Graphics.DrawString(box.Text, box.Font, Brushes.White, 0, 0);
+            //p.Graphics.DrawString(box.Text, box.Font, Brushes.Black, 0, 0);
         }
 
         private void Generate(int tagIndex)

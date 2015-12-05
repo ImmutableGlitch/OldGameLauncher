@@ -66,9 +66,9 @@
             this.btnAddGame = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.optionPanel = new System.Windows.Forms.Panel();
+            this.btnCloseMenu = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboOption = new System.Windows.Forms.ComboBox();
-            this.btnCloseMenu = new System.Windows.Forms.PictureBox();
             this.pnlEdit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseEditPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditPanel)).BeginInit();
@@ -129,6 +129,7 @@
             // picEditPanel
             // 
             this.picEditPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.picEditPanel.ImageLocation = "";
             this.picEditPanel.Location = new System.Drawing.Point(74, 227);
             this.picEditPanel.Name = "picEditPanel";
             this.picEditPanel.Size = new System.Drawing.Size(230, 108);
@@ -453,6 +454,19 @@
             this.optionPanel.TabIndex = 37;
             this.optionPanel.Visible = false;
             // 
+            // btnCloseMenu
+            // 
+            this.btnCloseMenu.Image = global::projGameLauncherCsharp.Properties.Resources.x;
+            this.btnCloseMenu.Location = new System.Drawing.Point(331, 3);
+            this.btnCloseMenu.Name = "btnCloseMenu";
+            this.btnCloseMenu.Size = new System.Drawing.Size(17, 17);
+            this.btnCloseMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCloseMenu.TabIndex = 19;
+            this.btnCloseMenu.TabStop = false;
+            this.btnCloseMenu.Click += new System.EventHandler(this.btnCloseMenu_Click);
+            this.btnCloseMenu.MouseEnter += new System.EventHandler(this.btnCloseMenu_MouseEnter);
+            this.btnCloseMenu.MouseLeave += new System.EventHandler(this.btnCloseMenu_MouseLeave);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -478,23 +492,12 @@
             this.cboOption.TabIndex = 0;
             this.cboOption.SelectedIndexChanged += new System.EventHandler(this.cboOption_SelectedIndexChanged);
             // 
-            // btnCloseMenu
-            // 
-            this.btnCloseMenu.Image = global::projGameLauncherCsharp.Properties.Resources.x;
-            this.btnCloseMenu.Location = new System.Drawing.Point(331, 3);
-            this.btnCloseMenu.Name = "btnCloseMenu";
-            this.btnCloseMenu.Size = new System.Drawing.Size(17, 17);
-            this.btnCloseMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnCloseMenu.TabIndex = 19;
-            this.btnCloseMenu.TabStop = false;
-            this.btnCloseMenu.Click += new System.EventHandler(this.btnCloseMenu_Click);
-            // 
             // frmGame
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(1289, 478);
             this.Controls.Add(this.optionPanel);
             this.Controls.Add(this.btnGameDir);

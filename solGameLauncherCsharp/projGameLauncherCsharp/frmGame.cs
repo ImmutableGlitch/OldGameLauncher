@@ -657,7 +657,7 @@ namespace projGameLauncherCsharp
 
         private void btnCloseEditPanel_MouseLeave(object sender, EventArgs e)
         {
-            btnCloseEditPanel.Image = Properties.Resources.xH;
+            btnCloseEditPanel.Image = Properties.Resources.x;
         }
 
         private void btnDoneAddPanel_Click(object sender, EventArgs e)
@@ -695,7 +695,10 @@ namespace projGameLauncherCsharp
         {
             arrNameLocPic[0, cboSelectGame.SelectedIndex] = txtNameEdit.Text;
             arrNameLocPic[1, cboSelectGame.SelectedIndex] = txtLocEdit.Text;
-            arrNameLocPic[2, cboSelectGame.SelectedIndex] = picEditPanel.ImageLocation;
+            if (picEditPanel.ImageLocation != null)
+            {
+                arrNameLocPic[2, cboSelectGame.SelectedIndex] = picEditPanel.ImageLocation;
+            }
 
             WriteTextFile();
             UpdateEditPanel();
@@ -763,22 +766,10 @@ namespace projGameLauncherCsharp
             }
 
             UpdateEditPanel();
-
-            //pnlEdit.Hide();
-            //btnAddGame.Enabled = true;
-            //btnEdit.Enabled = true;
-            //btnMenu.Enabled = true;
-            //flo.Enabled = true;
-            //btnEnlarge.Enabled = true;
         }
 
         private void cboSelectGame_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnSaveEditPanel.Enabled = true;
-            btnDeleteEditPanel.Enabled = true;
-            btnEditImage.Enabled = true;
-            btnLocationEdit.Enabled = true;
-            btnEnlarge.Enabled = true;
 
             txtNameEdit.Text = arrNameLocPic[0, cboSelectGame.SelectedIndex];
             txtLocEdit.Text = arrNameLocPic[1, cboSelectGame.SelectedIndex];
@@ -906,13 +897,6 @@ namespace projGameLauncherCsharp
             {
                 cboSelectGame.Items.Add(arrNameLocPic[0, i]);
             }
-
-            btnSaveEditPanel.Enabled = false;
-            btnDeleteEditPanel.Enabled = false;
-            btnEditImage.Enabled = false;
-            btnLocationEdit.Enabled = false;
-            btnEnlarge.Enabled = false;
-
         }
 
         #endregion
@@ -925,24 +909,30 @@ namespace projGameLauncherCsharp
 
         private void cboOption_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (cboOption.SelectedText)
+            switch (cboOption.Text)
             {
                 case "Games":
+                    MessageBox.Show("Gamesssss");
                     //use generate method with game text files
                     break;
 
                 case "Programs":
+                    MessageBox.Show("Programsssss");
                     //use generate method with program text files
                     break;
 
                 case "Other":
+                    MessageBox.Show("Other");
                     //use text files which holds misc items
                     break;
 
                 default:
-                    MessageBox.Show("Selected nothing?");
+                    MessageBox.Show("Selected Nothing?");
                     break;
             }
+
+            optionPanel.Hide();
+            toggleButtons();
         }
 
         private void frmGame_Click(object sender, EventArgs e)
@@ -957,5 +947,16 @@ namespace projGameLauncherCsharp
             optionPanel.Hide();
             toggleButtons();
         }
+
+        private void btnCloseMenu_MouseEnter(object sender, EventArgs e)
+        {
+            btnCloseMenu.Image = Properties.Resources.xH;
+        }
+
+        private void btnCloseMenu_MouseLeave(object sender, EventArgs e)
+        {
+            btnCloseMenu.Image = Properties.Resources.x;
+        }
+
     }
 }

@@ -1,35 +1,6 @@
-E:\Games\Installed\Assassins Creed 3\AC3SP.exe
-E:\Games\Installed\Assassins Creed IV Black Flag\AC4BFSP.exe
-E:\Games\Installed\Apache Air Assault\launcher.exe
-C:\Program Files (x86)\AssaultCube\assaultcube.bat
-E:\Games\Installed\Origin\gamesloc\Battlefield 3\bf3.exe
-E:\Games\Installed\Origin\gamesloc\Battlefield Bad Company 2\BFBC2Game.exe
-E:\Games\Installed\BioShock Infinite\Binaries\Win32\BioShockInfinite.exe
-E:\Games\Installed\Command & Conquer The First Decade\Launcher\TFDLauncher.exe
-E:\Games\Installed\COD4\iw3sp.exe
-E:\Games\Installed\Call of Duty World at War\Call of Duty - World at War\CoDWaW.exe
-E:\Games\Installed\Crysis 3\Bin32\Crysis3.exe
-E:\Games\Installed\Dishonored\Binaries\Win32\Dishonored.exe
-E:\Games\Installed\Dying Light\DyingLightGame.exe
-E:\Games\Installed\Empire Earth II\EE2.exe
-E:\Games\Installed\Empire Earth II\EE2X.exe
-E:\Games\Installed\Fallout New Vegas\FalloutNVLauncher.exe
-E:\Games\Installed\Far Cry 4\bin\FarCry4.exe
-E:\Games\Installed\Far Cry 3 Blood Dragon\bin\fc3_blooddragon_d3d11.exe
-E:\Games\Installed\Garrys Mod\Garrys_Mod.exe
-E:\Games\Installed\Half-Life 2\hl2.exe
-E:\Games\Installed\Need for Speed Most Wanted\NFS13.exe
-E:\Games\Installed\COD4 NoSteam\Call of Duty Modern Warfare\iw3mp.exe
-E:\Games\Installed\COD4 NoSteam\Call of Duty Modern Warfare\iw3sp.exe
-E:\Games\Installed\PROTOTYPE 2\prototype2.exe
-E:\Games\Installed\Prototype\prototypef.exe
-E:\Games\Installed\Rocket League\Binaries\Win32\RocketLeague.exe
-E:\Games\Installed\Saints Row IV\SaintsRowIV.exe
-E:\Games\Installed\Middle Earth Shadow of Mordor\x64\ShadowOfMordor.exe
-E:\Games\Installed\Sleeping Dogs\HKShip.exe
-E:\Games\Installed\Sniper Elite 3\bin\SniperElite3.exe
-E:\Games\Installed\SniperEliteV2\bin\SniperEliteV2.exe
-E:\Games\Installed\Sniper Ghost Warrior 2\Bin32\SniperGhostWarrior2.exe
-E:\Games\Installed\The Elder Scrolls V Skyrim - Legendary Edition\SkyrimLauncher.exe
-E:\Games\Installed\The Forest\TheForest.exe
-E:\Games\Installed\Tombraider\TombRaider.exe
+
+
+
+
+
+C:\Users\Administrator\Desktop\Tech 5th June 2015

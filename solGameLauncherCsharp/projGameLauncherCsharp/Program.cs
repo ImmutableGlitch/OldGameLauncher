@@ -16,9 +16,10 @@ namespace projGameLauncherCsharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
+
             //Application.Run(new TestHTML());
             Application.Run(new frmGame());
+            //Application.Run(new frmIconExtract());
         }
     }
 }

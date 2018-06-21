@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGame));
             this.Label2 = new System.Windows.Forms.Label();
-            this.pnlEdit = new System.Windows.Forms.Panel();
+            this.panelEditGame = new System.Windows.Forms.Panel();
             this.btnCloseEditPanel = new System.Windows.Forms.PictureBox();
             this.picEditPanel = new System.Windows.Forms.PictureBox();
             this.btnEditImage = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnAddImage = new System.Windows.Forms.Button();
             this.Label3 = new System.Windows.Forms.Label();
-            this.pnlAdd = new System.Windows.Forms.Panel();
+            this.panelAddNewGame = new System.Windows.Forms.Panel();
             this.btnCloseAddPanel = new System.Windows.Forms.PictureBox();
             this.picAddPanel = new System.Windows.Forms.PictureBox();
             this.ofdEditImage = new System.Windows.Forms.OpenFileDialog();
@@ -69,10 +69,11 @@
             this.btnCloseMenu = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboOption = new System.Windows.Forms.ComboBox();
-            this.pnlEdit.SuspendLayout();
+            this.cboColour = new System.Windows.Forms.ComboBox();
+            this.panelEditGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseEditPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditPanel)).BeginInit();
-            this.pnlAdd.SuspendLayout();
+            this.panelAddNewGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseAddPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGameDir)).BeginInit();
@@ -96,22 +97,22 @@
             // 
             // pnlEdit
             // 
-            this.pnlEdit.Controls.Add(this.btnCloseEditPanel);
-            this.pnlEdit.Controls.Add(this.picEditPanel);
-            this.pnlEdit.Controls.Add(this.btnEditImage);
-            this.pnlEdit.Controls.Add(this.btnLocationEdit);
-            this.pnlEdit.Controls.Add(this.Label6);
-            this.pnlEdit.Controls.Add(this.cboSelectGame);
-            this.pnlEdit.Controls.Add(this.txtLocEdit);
-            this.pnlEdit.Controls.Add(this.txtNameEdit);
-            this.pnlEdit.Controls.Add(this.Label4);
-            this.pnlEdit.Controls.Add(this.Label5);
-            this.pnlEdit.Controls.Add(this.btnSaveEditPanel);
-            this.pnlEdit.Controls.Add(this.btnDeleteEditPanel);
-            this.pnlEdit.Location = new System.Drawing.Point(440, 73);
-            this.pnlEdit.Name = "pnlEdit";
-            this.pnlEdit.Size = new System.Drawing.Size(388, 374);
-            this.pnlEdit.TabIndex = 29;
+            this.panelEditGame.Controls.Add(this.btnCloseEditPanel);
+            this.panelEditGame.Controls.Add(this.picEditPanel);
+            this.panelEditGame.Controls.Add(this.btnEditImage);
+            this.panelEditGame.Controls.Add(this.btnLocationEdit);
+            this.panelEditGame.Controls.Add(this.Label6);
+            this.panelEditGame.Controls.Add(this.cboSelectGame);
+            this.panelEditGame.Controls.Add(this.txtLocEdit);
+            this.panelEditGame.Controls.Add(this.txtNameEdit);
+            this.panelEditGame.Controls.Add(this.Label4);
+            this.panelEditGame.Controls.Add(this.Label5);
+            this.panelEditGame.Controls.Add(this.btnSaveEditPanel);
+            this.panelEditGame.Controls.Add(this.btnDeleteEditPanel);
+            this.panelEditGame.Location = new System.Drawing.Point(440, 73);
+            this.panelEditGame.Name = "pnlEdit";
+            this.panelEditGame.Size = new System.Drawing.Size(388, 374);
+            this.panelEditGame.TabIndex = 29;
             // 
             // btnCloseEditPanel
             // 
@@ -286,21 +287,21 @@
             this.Label3.TabIndex = 1;
             this.Label3.Text = "Location";
             // 
-            // pnlAdd
+            // panelAddNewGame
             // 
-            this.pnlAdd.Controls.Add(this.btnCloseAddPanel);
-            this.pnlAdd.Controls.Add(this.btnLocationAdd);
-            this.pnlAdd.Controls.Add(this.picAddPanel);
-            this.pnlAdd.Controls.Add(this.btnDoneAddPanel);
-            this.pnlAdd.Controls.Add(this.txtLocation);
-            this.pnlAdd.Controls.Add(this.txtName);
-            this.pnlAdd.Controls.Add(this.btnAddImage);
-            this.pnlAdd.Controls.Add(this.Label3);
-            this.pnlAdd.Controls.Add(this.Label2);
-            this.pnlAdd.Location = new System.Drawing.Point(27, 106);
-            this.pnlAdd.Name = "pnlAdd";
-            this.pnlAdd.Size = new System.Drawing.Size(388, 317);
-            this.pnlAdd.TabIndex = 28;
+            this.panelAddNewGame.Controls.Add(this.btnCloseAddPanel);
+            this.panelAddNewGame.Controls.Add(this.btnLocationAdd);
+            this.panelAddNewGame.Controls.Add(this.picAddPanel);
+            this.panelAddNewGame.Controls.Add(this.btnDoneAddPanel);
+            this.panelAddNewGame.Controls.Add(this.txtLocation);
+            this.panelAddNewGame.Controls.Add(this.txtName);
+            this.panelAddNewGame.Controls.Add(this.btnAddImage);
+            this.panelAddNewGame.Controls.Add(this.Label3);
+            this.panelAddNewGame.Controls.Add(this.Label2);
+            this.panelAddNewGame.Location = new System.Drawing.Point(27, 106);
+            this.panelAddNewGame.Name = "panelAddNewGame";
+            this.panelAddNewGame.Size = new System.Drawing.Size(388, 317);
+            this.panelAddNewGame.TabIndex = 28;
             // 
             // btnCloseAddPanel
             // 
@@ -318,6 +319,8 @@
             // picAddPanel
             // 
             this.picAddPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.picAddPanel.ImageLocation = "E:\\Programming\\Git\\repos\\solBetterExplorer\\projBetterExplorer\\bin\\Debug\\folder.pn" +
+    "g";
             this.picAddPanel.Location = new System.Drawing.Point(74, 178);
             this.picAddPanel.Name = "picAddPanel";
             this.picAddPanel.Size = new System.Drawing.Size(230, 108);
@@ -361,11 +364,11 @@
             // lblNumOfGames
             // 
             this.lblNumOfGames.AutoSize = true;
-            this.lblNumOfGames.Font = new System.Drawing.Font("DotumChe", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumOfGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumOfGames.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lblNumOfGames.Location = new System.Drawing.Point(529, 19);
             this.lblNumOfGames.Name = "lblNumOfGames";
-            this.lblNumOfGames.Size = new System.Drawing.Size(139, 19);
+            this.lblNumOfGames.Size = new System.Drawing.Size(136, 24);
             this.lblNumOfGames.TabIndex = 30;
             this.lblNumOfGames.Text = "Game Count: 0";
             this.lblNumOfGames.Visible = false;
@@ -492,6 +495,20 @@
             this.cboOption.TabIndex = 0;
             this.cboOption.SelectedIndexChanged += new System.EventHandler(this.cboOption_SelectedIndexChanged);
             // 
+            // cboColour
+            // 
+            this.cboColour.FormattingEnabled = true;
+            this.cboColour.Items.AddRange(new object[] {
+            "Red",
+            "Green",
+            "Blue",
+            "Gray"});
+            this.cboColour.Location = new System.Drawing.Point(158, 12);
+            this.cboColour.Name = "cboColour";
+            this.cboColour.Size = new System.Drawing.Size(121, 21);
+            this.cboColour.TabIndex = 38;
+            this.cboColour.SelectedIndexChanged += new System.EventHandler(this.cboColour_SelectedIndexChanged);
+            // 
             // frmGame
             // 
             this.AllowDrop = true;
@@ -499,30 +516,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(1289, 478);
+            this.Controls.Add(this.cboColour);
             this.Controls.Add(this.optionPanel);
             this.Controls.Add(this.btnGameDir);
             this.Controls.Add(this.btnEnlarge);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAddGame);
-            this.Controls.Add(this.pnlEdit);
-            this.Controls.Add(this.pnlAdd);
+            this.Controls.Add(this.panelEditGame);
+            this.Controls.Add(this.panelAddNewGame);
             this.Controls.Add(this.flo);
             this.Controls.Add(this.lblNumOfGames);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmGame";
+            this.Text = "Game Launcher";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGame_FormClosing);
             this.Load += new System.EventHandler(this.frmGame_Load);
             this.DoubleClick += new System.EventHandler(this.frmGame_Click);
             this.MouseEnter += new System.EventHandler(this.frmGame_MouseEnter);
-            this.pnlEdit.ResumeLayout(false);
-            this.pnlEdit.PerformLayout();
+            this.panelEditGame.ResumeLayout(false);
+            this.panelEditGame.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseEditPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEditPanel)).EndInit();
-            this.pnlAdd.ResumeLayout(false);
-            this.pnlAdd.PerformLayout();
+            this.panelAddNewGame.ResumeLayout(false);
+            this.panelAddNewGame.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseAddPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAddPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGameDir)).EndInit();
@@ -545,7 +563,7 @@
         internal System.Windows.Forms.PictureBox btnEdit;
         internal System.Windows.Forms.PictureBox btnAddGame;
         internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.Panel pnlEdit;
+        internal System.Windows.Forms.Panel panelEditGame;
         internal System.Windows.Forms.PictureBox picEditPanel;
         internal System.Windows.Forms.Button btnEditImage;
         internal System.Windows.Forms.Button btnLocationEdit;
@@ -564,7 +582,7 @@
         internal System.Windows.Forms.TextBox txtName;
         internal System.Windows.Forms.Button btnAddImage;
         internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.Panel pnlAdd;
+        internal System.Windows.Forms.Panel panelAddNewGame;
         internal System.Windows.Forms.OpenFileDialog ofdEditImage;
         internal System.Windows.Forms.OpenFileDialog ofdGameLocAdd;
         internal System.Windows.Forms.OpenFileDialog ofdGameLocEdit;
@@ -579,5 +597,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboOption;
         private System.Windows.Forms.PictureBox btnCloseMenu;
+        private System.Windows.Forms.ComboBox cboColour;
     }
 }

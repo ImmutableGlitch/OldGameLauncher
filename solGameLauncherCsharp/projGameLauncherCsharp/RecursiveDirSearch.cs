@@ -1,7 +1,5 @@
-﻿using System;
+﻿using System.Diagnostics;
 using System.IO;
-using System.Collections;
-using System.Diagnostics;
 
 public class RecursiveSearch
 {
@@ -21,7 +19,7 @@ public class RecursiveSearch
             }
             else
             {
-                Debug.WriteLine(string.Format("{0} is not a valid file or directory.", path));
+                Debug.WriteLine(string.Format("{0} is not a valid file or directory." , path));
             }
         }
     }
@@ -45,6 +43,6 @@ public class RecursiveSearch
     // Insert logic for processing found files here. 
     public static void ProcessFile(string path)
     {
-        Debug.WriteLine(string.Format("Processed file '{0}'.", path));
+        Debug.WriteLine(string.Format("Processed file '{0}'." , path));
     }
 }

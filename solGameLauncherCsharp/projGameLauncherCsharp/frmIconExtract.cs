@@ -7,7 +7,7 @@ namespace projGameLauncherCsharp
 {
     public partial class frmIconExtract : Form
     {
-        static string path = @"C:\Users\chris\Desktop\Games";
+        static string path = @"E:\Hobbies\Games\Game Shorts";
         string[] maybeDeleteMe = new string[100];
         int pointer = 0;
         public frmIconExtract()

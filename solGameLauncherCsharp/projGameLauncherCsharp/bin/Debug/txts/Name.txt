@@ -1,0 +1,50 @@
+Bf 3
+BFBC2Game
+Bio Shock Infinite
+TFDLauncher
+Iw 3sp
+Co DWa W
+Crysis 3
+Dishonored
+Dying Light Game
+EE2
+EE2X
+Fallout 4Launcher
+Fallout NVLauncher
+Far Cry 4
+Fc 3_blooddragon_d 3d 11
+Garrys_Mod
+NFS13
+Iw 3mp
+Iw 3sp
+Prototype 2
+Prototypef
+Rocket League
+Saints Row IV
+Shadow Of Mordor
+HKShip
+Sniper Elite 3
+Sniper Elite V2
+Sniper Ghost Warrior 2
+Skyrim Launcher
+The Forest
+Tomb Raider
+AC3SP
+AC4BFSP
+Launcher
+Assaultcube
+Rainbow Six
+Gta_sa
+RA1MPLauncher
+BF4X86Web Helper
+
+NFS13
+Netbeans 64
+Skype
+Arduino
+CCleaner 64
+Diffusew
+WDExpress
+Deluge
+Proj Youtube API
+CCleaner 64

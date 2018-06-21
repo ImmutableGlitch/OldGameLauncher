@@ -1,16 +1,13 @@
-﻿using System;
-using System.Diagnostics;
+﻿using Microsoft.WindowsAPICodePack.Shell;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.IO;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Net;
-using HtmlAgilityPack;
-using System.Xml;
 
 namespace projGameLauncherCsharp
 {
@@ -21,7 +18,7 @@ namespace projGameLauncherCsharp
 
         int pointerGames = 0;
 
-        string[,] arrNameLocPic = new string[3, 200];
+        string[,] arrNameLocPic = new string[3 , 6];
 
         string NameList = "Name.txt",
                LocList = "Loc.txt",
@@ -32,38 +29,38 @@ namespace projGameLauncherCsharp
             InitializeComponent();
         }
 
-        private void frmGame_Load(object sender, EventArgs e)
+        private void frmGame_Load(object sender , EventArgs e)
         {
-            //allows for key events to be used
+            //allows for key events to be used ?keyboard
             this.KeyPreview = true;
 
             //full screen mode
-            this.TopMost = true;
+            //this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
 
-            centerComponents();
+            foreach(var c in Controls){
+                CenterObjectsOnScreen(c);
+            }
 
-            btnEnlarge_Click(null, null);
+            btnEnlarge_Click(null , null);
 
             //Hide panels
-            pnlAdd.Hide();
-            pnlEdit.Hide();
+            panelAddNewGame.Hide();
+            panelEditGame.Hide();
 
-            //Set colour and flow panel layout
-            //this.BackColor = Color.FromArgb(37, 37, 37);
-            this.BackColor = Color.FromArgb(21, 71, 0);//green
-            this.BackColor = Color.FromArgb(3, 32, 53);//blue
-            
-            //flo.BackColor = Color.FromArgb(49, 49, 49);
-            flo.BackColor = Color.FromArgb(44, 108, 17);//green
-            flo.BackColor = Color.FromArgb(17, 53, 81);//blue
+            //TODO: load previous colour setting that was saved
+            //Set colour and flow panel layout + each groupbox with the paint method
+            //p.Graphics.Clear(Color.FromArgb(37, 37, 37)); //Example paint choice
+            this.BackColor = Color.FromArgb(37 , 37 , 37);
+            flo.BackColor = Color.FromArgb(49 , 49 , 49);
+
 
             flo.FlowDirection = FlowDirection.LeftToRight;
             flo.WrapContents = true;
             flo.AutoScroll = true;
 
-            ReadTextFile();
+            //ReadTextFile();
 
             CallGenerate();
         }
@@ -74,7 +71,7 @@ namespace projGameLauncherCsharp
         {
             //reset pointer and array
             pointerGames = 0;
-            Array.Clear(arrNameLocPic, 0, arrNameLocPic.Length);
+            Array.Clear(arrNameLocPic , 0 , arrNameLocPic.Length);
 
             if (File.Exists(NameList) && File.Exists(LocList) && File.Exists(PicList))
             {
@@ -92,7 +89,7 @@ namespace projGameLauncherCsharp
                     //store name of games
                     foreach (string name in strNameList)
                     {
-                        arrNameLocPic[0, pointerGames] = name;
+                        arrNameLocPic[0 , pointerGames] = name;
                         pointerGames++;
                     }
 
@@ -101,7 +98,7 @@ namespace projGameLauncherCsharp
                     //store location of games
                     foreach (string location in strLocList)
                     {
-                        arrNameLocPic[1, pointerGames] = location;
+                        arrNameLocPic[1 , pointerGames] = location;
                         pointerGames++;
                     }
 
@@ -110,7 +107,7 @@ namespace projGameLauncherCsharp
                     //store picture of games
                     foreach (string picture in strPicList)
                     {
-                        arrNameLocPic[2, pointerGames] = picture;
+                        arrNameLocPic[2 , pointerGames] = picture;
                         pointerGames++;
                     }
 
@@ -156,7 +153,7 @@ namespace projGameLauncherCsharp
                 {
                     for (int i = 0; i < pointerGames; i++)
                     {
-                        sw.WriteLine(arrNameLocPic[0, i]);
+                        sw.WriteLine(arrNameLocPic[0 , i]);
                     }
 
                     sw.Close();
@@ -166,7 +163,7 @@ namespace projGameLauncherCsharp
                 {
                     for (int i = 0; i < pointerGames; i++)
                     {
-                        sw.WriteLine(arrNameLocPic[1, i]);
+                        sw.WriteLine(arrNameLocPic[1 , i]);
                     }
 
                     sw.Close();
@@ -176,7 +173,7 @@ namespace projGameLauncherCsharp
                 {
                     for (int i = 0; i < pointerGames; i++)
                     {
-                        sw.WriteLine(arrNameLocPic[2, i]);
+                        sw.WriteLine(arrNameLocPic[2 , i]);
                     }
 
                     sw.Close();
@@ -190,7 +187,7 @@ namespace projGameLauncherCsharp
 
             try
             {
-                foreach (System.IO.FileInfo f in dir.GetFiles())
+                foreach (FileInfo f in dir.GetFiles())
                 {
 
                     if (pointerGames == arrNameLocPic.GetLength(1))
@@ -198,7 +195,7 @@ namespace projGameLauncherCsharp
                         arrNameLocPic = resizeArray(arrNameLocPic);
                     }
 
-                    arrNameLocPic[1, pointerGames] = f.FullName;
+                    arrNameLocPic[1 , pointerGames] = f.FullName;
 
                     Icon imageICO = Icon.ExtractAssociatedIcon(f.FullName);
                     Bitmap imageBMP = imageICO.ToBitmap();
@@ -231,7 +228,7 @@ namespace projGameLauncherCsharp
                 {
                     newText.Append(' ');
                 }
-                    //would change Battlefield3 to Battlefield 3
+                //would change Battlefield3 to Battlefield 3
                 else if (char.IsNumber(text[i]) && char.IsLower(text[i - 1]))
                 {
                     newText.Append(' ');
@@ -241,34 +238,36 @@ namespace projGameLauncherCsharp
             return newText.ToString();
         }
 
-
-        private void flo_DragDrop(object sender, DragEventArgs e)
+        private void flo_DragDrop(object sender , DragEventArgs e)
         {
             //Store files that are dropped on to the form
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
-            
-            //For each file
-            foreach (string strFile in files)
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop , false);
+
+            foreach (string item in files)
             {
                 string location = "";
-                try
+                //TODO: Check if the item is url or lnk.
+                if (item.EndsWith(".lnk"))
                 {
-                    if (System.IO.File.Exists(strFile))
+                    try
                     {
-                        //Create a new WshShell COM Object
-                        IWshRuntimeLibrary.WshShell shell = new IWshRuntimeLibrary.WshShell(); 
-                        //Links the dropped file to the COM Object, providing access to game .exe instead of .ink
-                        IWshRuntimeLibrary.IWshShortcut link = (IWshRuntimeLibrary.IWshShortcut)shell.CreateShortcut(strFile); 
-                        
-                        //store actual game location
-                        location = link.TargetPath;
+                        //Cast COM object from shortcut
+                        if (File.Exists(item))
+                        {
+                            IWshRuntimeLibrary.WshShell shell = new IWshRuntimeLibrary.WshShell(); //Create shell interface
+                            IWshRuntimeLibrary.IWshShortcut link = (IWshRuntimeLibrary.IWshShortcut)shell.CreateShortcut(item);
 
+                            location = link.TargetPath;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    //MessageBox.Show("Adding steam shortcuts wont allow access to original file.");
-                    Debug.WriteLine(ex.Message);
+                    location = item;
                 }
 
                 //Resize array if needed
@@ -284,12 +283,12 @@ namespace projGameLauncherCsharp
                 if (fileName.Contains("Shortcut"))
                 {
                     int startPoint = fileName.LastIndexOf('.');
-                    fileName = fileName.Remove(startPoint, fileName.Length - startPoint);
+                    fileName = fileName.Remove(startPoint , fileName.Length - startPoint);
                 }
 
                 //Call method which cleans file names
-                arrNameLocPic[0, pointerGames] = AddSpacesToSentence(fileName);
-                arrNameLocPic[1, pointerGames] = location;
+                arrNameLocPic[0 , pointerGames] = AddSpacesToSentence(fileName);
+                arrNameLocPic[1 , pointerGames] = location;
 
                 //TODO - SCAN THROUGH ALL THIS STUFF, used to download images from theGameDBs.net although not reliable. Use Google API or custom web parsing
                 #region editMe
@@ -379,23 +378,23 @@ namespace projGameLauncherCsharp
                 #endregion
 
                 //use filename as bmp image name
-                string iconPath = Directory.GetCurrentDirectory() + @"\icons\" + arrNameLocPic[0, pointerGames] + ".bmp";
-                arrNameLocPic[2, pointerGames] = iconPath;
+                string iconPath = Directory.GetCurrentDirectory() + @"\icons\" + arrNameLocPic[0 , pointerGames] + ".bmp";
+                arrNameLocPic[2 , pointerGames] = iconPath;
 
                 try
                 {
                     //TODO - stores icon cache, will be redundant once images/steamgrids functionality replace it
                     //delete existing icon may not be needed, file would simply be overwritten
                     //File.Delete(iconPath);
-                    Icon imageICO = Icon.ExtractAssociatedIcon(location);
-                    Bitmap imageBMP = imageICO.ToBitmap();
-                    imageBMP.Save(iconPath);
+
+                    //Extract icon and save it at iconPath
+                    Icon.ExtractAssociatedIcon(location).ToBitmap().Save(iconPath);
                 }
                 catch (Exception ex)
                 {
-                    //TODO - FIND OUT WHY THIS ERROR IS ACTUALLY OCCURING
+                    //TODO - Fix this exception
                     Debug.WriteLine(ex.Message);
-                    MessageBox.Show("Exit and reopen the app before adding more games. Error Message: " + ex.Message);
+                    MessageBox.Show("File not found exception. Error Message: " + ex.Message);
                 }
 
                 pointerGames++;
@@ -408,16 +407,17 @@ namespace projGameLauncherCsharp
             CallGenerate();
         }
 
-        private void PaintBorderlessGroupBox(object sender, PaintEventArgs p)
+        private void PaintBorderlessGroupBox(object sender , PaintEventArgs p)
         {
             GroupBox box = (GroupBox)sender;
-            
+
             //Borderless
             //p.Graphics.Clear(box.Parent.BackColor);
 
-            //p.Graphics.Clear(Color.FromArgb(37,37,37));
-            p.Graphics.Clear(Color.FromArgb(3, 32, 53));
-            p.Graphics.DrawString(box.Text, box.Font, Brushes.White, 0, 0);
+            //GROUPBOX TITLE COLOUR NEEDS TO BE UPDATED ALONG WITH FLO COLOUR
+            p.Graphics.Clear(Color.FromArgb(37 , 37 , 37));
+            //p.Graphics.Clear(Color.FromArgb(3, 32, 53));
+            p.Graphics.DrawString(box.Text , box.Font , Brushes.White , 0 , 0);
             //p.Graphics.DrawString(box.Text, box.Font, Brushes.Black, 0, 0);
         }
 
@@ -426,17 +426,19 @@ namespace projGameLauncherCsharp
             PictureBox btn = new PictureBox();
             btn.Click += new EventHandler(GameClickEvent);
             btn.Tag = tagIndex;
-            //btn.BackColor = Color.FromArgb(68, 68, 68); //grayish
+            btn.BackColor = Color.FromArgb(68 , 68 , 68); //grayish TODO: grab more rgb colours, also have setting to use either icon or pic
 
             btn.Width = 230;
             btn.Height = 108;
             //btn.Margin = new Padding(0, 0, 60, 0); //left top right bottom
             //btn.Margin = new Padding(0, 54, 0, 60); //left top right bottom
-            btn.Size = new System.Drawing.Size(230, 108);
+            btn.Size = new System.Drawing.Size(230 , 108);
 
             try
             {
-                Image pic = Image.FromFile(arrNameLocPic[2, tagIndex]);
+                Debug.WriteLine("Array Items: {0:G}/{1:G}." , pointerGames , arrNameLocPic.GetUpperBound(1));
+                //Image pic = Image.FromFile(arrNameLocPic[2 , tagIndex]);
+                Image pic = ShellFile.FromFilePath(arrNameLocPic[1 , tagIndex]).Thumbnail.LargeIcon.ToBitmap();
                 btn.Image = pic;
                 if (pic.Height > 32)
                 {
@@ -458,21 +460,20 @@ namespace projGameLauncherCsharp
 
             Label buttonLabel = new Label();
             buttonLabel.Width = 230;
-            buttonLabel.Text = arrNameLocPic[0, tagIndex];
-            buttonLabel.Font = new System.Drawing.Font("Minecraftia", 6f);
+            buttonLabel.Text = arrNameLocPic[0 , tagIndex];
+            buttonLabel.Font = new System.Drawing.Font("Minecraftia" , 6f);
             buttonLabel.ForeColor = Color.White;
-            buttonLabel.Margin = new Padding(0, 54, 0, 60);
+            buttonLabel.Margin = new Padding(0 , 54 , 0 , 60);
 
-            //TODO - WHY AM I USING GROUPBOX 
             GroupBox groupBox = new GroupBox();
             groupBox.Paint += PaintBorderlessGroupBox;
-            groupBox.Text = arrNameLocPic[0, tagIndex];
+            groupBox.Text = arrNameLocPic[0 , tagIndex];
             groupBox.ForeColor = Color.White;
-            groupBox.Size = new Size(236, 125);
+            groupBox.Size = new Size(236 , 125);
             groupBox.Dock = DockStyle.Top;
             flo.Controls.Add(groupBox);
 
-            groupBox.Margin = new Padding(55, 10, 10, 25);
+            groupBox.Margin = new Padding(55 , 10 , 10 , 25);
             btn.Location = groupBox.DisplayRectangle.Location;
             //btn.Size = new Size(0, 0);
             //btn.AutoSize = true;
@@ -484,7 +485,7 @@ namespace projGameLauncherCsharp
             //flo.Controls.Add(buttonLabel);
         }
 
-        public void GameClickEvent(Object sender, EventArgs e)
+        public void GameClickEvent(Object sender , EventArgs e)
         {
             PictureBox btn = (PictureBox)sender;
 
@@ -494,7 +495,7 @@ namespace projGameLauncherCsharp
 
             try
             {
-                Process.Start(arrNameLocPic[1, (int)btn.Tag]);
+                Process.Start(arrNameLocPic[1 , (int)btn.Tag]);
             }
             catch (Exception ex)
             {
@@ -527,30 +528,44 @@ namespace projGameLauncherCsharp
             flo.Enabled = boolButton;
         }
 
+        private void frmGame_MouseEnter(object sender , EventArgs e)
+        {
+            flo.Focus();
+        }
 
-        private void btnMenu_MouseEnter(object sender, EventArgs e)
+        private void flo_MouseEnter(object sender , EventArgs e)
+        {
+            flo.Focus();
+        }
+
+        private void flo_DragEnter(object sender , DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
+        }
+
+        private void btnMenu_MouseEnter(object sender , EventArgs e)
         {
             btnMenu.Image = Properties.Resources.menuH;
         }
 
-        private void btnMenu_MouseLeave(object sender, EventArgs e)
+        private void btnMenu_MouseLeave(object sender , EventArgs e)
         {
             btnMenu.Image = Properties.Resources.menu;
         }
 
-        private void btnEnlarge_Click(object sender, EventArgs e)
+        private void btnEnlarge_Click(object sender , EventArgs e)
         {
             if (!smallSize)
             {
                 this.WindowState = FormWindowState.Normal;
-                this.Size = new Size(850, 478);
-                flo.Size = new Size(826, 419);
+                this.Size = new Size(850 , 478);
+                flo.Size = new Size(826 , 419);
                 foreach (GroupBox gb in flo.Controls)
                 {
                     gb.Margin = new Padding(15);
                 }
-                btnEnlarge.Location = new Point(766, 10);
-                btnMenu.Location = new Point(806, 10);
+                btnEnlarge.Location = new Point(766 , 10);
+                btnMenu.Location = new Point(806 , 10);
                 smallSize = !smallSize;
             }
             else
@@ -559,9 +574,9 @@ namespace projGameLauncherCsharp
                 //flo.Size = new Size(1256, 659);
                 //btnEnlarge.Location = new Point(1186, 6);
                 //btnMenu.Location = new Point(1225, 6);
-                flo.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width - 24, Screen.PrimaryScreen.WorkingArea.Height - 30);
-                btnEnlarge.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 80, 6);
-                btnMenu.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 40, 6);
+                flo.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width - 24 , Screen.PrimaryScreen.WorkingArea.Height - 30);
+                btnEnlarge.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 80 , 6);
+                btnMenu.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - 40 , 6);
                 smallSize = !smallSize;
             }
 
@@ -571,50 +586,50 @@ namespace projGameLauncherCsharp
             this.Show();
         }
 
-        private void btnEnlarge_MouseEnter(object sender, EventArgs e)
+        private void btnEnlarge_MouseEnter(object sender , EventArgs e)
         {
             btnEnlarge.Image = Properties.Resources.enlargeH;
         }
 
-        private void btnEnlarge_MouseLeave(object sender, EventArgs e)
+        private void btnEnlarge_MouseLeave(object sender , EventArgs e)
         {
             btnEnlarge.Image = Properties.Resources.enlarge;
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender , EventArgs e)
         {
-            pnlEdit.Show();
+            panelEditGame.Show();
             toggleButtons();
             UpdateEditPanel();
         }
 
-        private void btnEdit_MouseEnter(object sender, EventArgs e)
+        private void btnEdit_MouseEnter(object sender , EventArgs e)
         {
             btnEdit.Image = Properties.Resources.editH;
         }
 
-        private void btnEdit_MouseLeave(object sender, EventArgs e)
+        private void btnEdit_MouseLeave(object sender , EventArgs e)
         {
             btnEdit.Image = Properties.Resources.edit;
         }
 
-        private void btnAddGame_Click(object sender, EventArgs e)
+        private void btnAddGame_Click(object sender , EventArgs e)
         {
-            pnlAdd.Show();
+            panelAddNewGame.Show();
             toggleButtons();
         }
 
-        private void btnAddGame_MouseEnter(object sender, EventArgs e)
+        private void btnAddGame_MouseEnter(object sender , EventArgs e)
         {
             btnAddGame.Image = Properties.Resources.addH;
         }
 
-        private void btnAddGame_MouseLeave(object sender, EventArgs e)
+        private void btnAddGame_MouseLeave(object sender , EventArgs e)
         {
             btnAddGame.Image = Properties.Resources.add;
         }
 
-        private void btnGameDir_Click(object sender, EventArgs e)
+        private void btnGameDir_Click(object sender , EventArgs e)
         {
             try
             {
@@ -626,49 +641,49 @@ namespace projGameLauncherCsharp
             }
         }
 
-        private void btnGameDir_MouseEnter(object sender, EventArgs e)
+        private void btnGameDir_MouseEnter(object sender , EventArgs e)
         {
             btnGameDir.Image = Properties.Resources.gamesH;
         }
 
-        private void btnGameDir_MouseLeave(object sender, EventArgs e)
+        private void btnGameDir_MouseLeave(object sender , EventArgs e)
         {
             btnGameDir.Image = Properties.Resources.games;
         }
 
-        private void btnCloseAddPanel_Click(object sender, EventArgs e)
+        private void btnCloseAddPanel_Click(object sender , EventArgs e)
         {
-            pnlAdd.Hide();
+            panelAddNewGame.Hide();
             toggleButtons();
         }
 
-        private void btnCloseEditPanel_Click(object sender, EventArgs e)
+        private void btnCloseEditPanel_Click(object sender , EventArgs e)
         {
-            pnlEdit.Hide();
+            panelEditGame.Hide();
             toggleButtons();
         }
 
-        private void btnCloseAddPanel_MouseEnter(object sender, EventArgs e)
+        private void btnCloseAddPanel_MouseEnter(object sender , EventArgs e)
         {
             btnCloseAddPanel.Image = Properties.Resources.xH;
         }
 
-        private void btnCloseAddPanel_MouseLeave(object sender, EventArgs e)
+        private void btnCloseAddPanel_MouseLeave(object sender , EventArgs e)
         {
             btnCloseAddPanel.Image = Properties.Resources.x;
         }
 
-        private void btnCloseEditPanel_MouseEnter(object sender, EventArgs e)
+        private void btnCloseEditPanel_MouseEnter(object sender , EventArgs e)
         {
             btnCloseEditPanel.Image = Properties.Resources.xH;
         }
 
-        private void btnCloseEditPanel_MouseLeave(object sender, EventArgs e)
+        private void btnCloseEditPanel_MouseLeave(object sender , EventArgs e)
         {
             btnCloseEditPanel.Image = Properties.Resources.x;
         }
 
-        private void btnDoneAddPanel_Click(object sender, EventArgs e)
+        private void btnDoneAddPanel_Click(object sender , EventArgs e)
         {
             if (txtName.Text == "" || txtLocation.Text == "")
             {
@@ -677,9 +692,9 @@ namespace projGameLauncherCsharp
             else
             {
                 //Update Arrays
-                arrNameLocPic[0, pointerGames] = txtName.Text;
-                arrNameLocPic[1, pointerGames] = txtLocation.Text;
-                arrNameLocPic[2, pointerGames] = picAddPanel.ImageLocation;
+                arrNameLocPic[0 , pointerGames] = txtName.Text;
+                arrNameLocPic[1 , pointerGames] = txtLocation.Text;
+                arrNameLocPic[2 , pointerGames] = picAddPanel.ImageLocation;
 
                 pointerGames++;
 
@@ -699,13 +714,13 @@ namespace projGameLauncherCsharp
             }
         }
 
-        private void btnSaveEditPanel_Click(object sender, EventArgs e)
+        private void btnSaveEditPanel_Click(object sender , EventArgs e)
         {
-            arrNameLocPic[0, cboSelectGame.SelectedIndex] = txtNameEdit.Text;
-            arrNameLocPic[1, cboSelectGame.SelectedIndex] = txtLocEdit.Text;
+            arrNameLocPic[0 , cboSelectGame.SelectedIndex] = txtNameEdit.Text;
+            arrNameLocPic[1 , cboSelectGame.SelectedIndex] = txtLocEdit.Text;
             if (picEditPanel.ImageLocation != null)
             {
-                arrNameLocPic[2, cboSelectGame.SelectedIndex] = picEditPanel.ImageLocation;
+                arrNameLocPic[2 , cboSelectGame.SelectedIndex] = picEditPanel.ImageLocation;
             }
 
             WriteTextFile();
@@ -715,55 +730,55 @@ namespace projGameLauncherCsharp
             CallGenerate();
         }
 
-        private void btnAddImage_Click(object sender, EventArgs e)
+        private void btnAddImage_Click(object sender , EventArgs e)
         {
             ofdAddImage.ShowDialog();
         }
 
-        private void ofdAddImage_FileOk(object sender, CancelEventArgs e)
+        private void ofdAddImage_FileOk(object sender , CancelEventArgs e)
         {
             picAddPanel.ImageLocation = ofdAddImage.FileName;
         }
 
-        private void btnLocationAdd_Click(object sender, EventArgs e)
+        private void btnLocationAdd_Click(object sender , EventArgs e)
         {
             ofdGameLocAdd.ShowDialog();
         }
 
-        private void btnEditImage_Click(object sender, EventArgs e)
+        private void btnEditImage_Click(object sender , EventArgs e)
         {
             ofdEditImage.ShowDialog();
         }
 
-        private void ofdGameLocEdit_FileOk(object sender, CancelEventArgs e)
+        private void ofdGameLocEdit_FileOk(object sender , CancelEventArgs e)
         {
             txtLocEdit.Text = ofdGameLocEdit.FileName;
         }
 
-        private void btnLocationEdit_Click(object sender, EventArgs e)
+        private void btnLocationEdit_Click(object sender , EventArgs e)
         {
             ofdGameLocEdit.ShowDialog();
         }
 
-        private void ofdEditImage_FileOk(object sender, CancelEventArgs e)
+        private void ofdEditImage_FileOk(object sender , CancelEventArgs e)
         {
             picEditPanel.ImageLocation = ofdEditImage.FileName;
         }
 
-        private void ofdGameLocAdd_FileOk(object sender, CancelEventArgs e)
+        private void ofdGameLocAdd_FileOk(object sender , CancelEventArgs e)
         {
             txtLocation.Text = ofdGameLocAdd.FileName;
         }
 
-        private void btnDeleteEditPanel_Click(object sender, EventArgs e)
+        private void btnDeleteEditPanel_Click(object sender , EventArgs e)
         {
             if (cboSelectGame.SelectedIndex < pointerGames)
             {
                 for (int i = cboSelectGame.SelectedIndex; i < pointerGames; i++)
                 {
-                    arrNameLocPic[0, i] = arrNameLocPic[0, i + 1];
-                    arrNameLocPic[1, i] = arrNameLocPic[1, i + 1];
-                    arrNameLocPic[2, i] = arrNameLocPic[2, i + 1];
+                    arrNameLocPic[0 , i] = arrNameLocPic[0 , i + 1];
+                    arrNameLocPic[1 , i] = arrNameLocPic[1 , i + 1];
+                    arrNameLocPic[2 , i] = arrNameLocPic[2 , i + 1];
                 }
 
                 pointerGames--;
@@ -776,14 +791,14 @@ namespace projGameLauncherCsharp
             UpdateEditPanel();
         }
 
-        private void cboSelectGame_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboSelectGame_SelectedIndexChanged(object sender , EventArgs e)
         {
 
-            txtNameEdit.Text = arrNameLocPic[0, cboSelectGame.SelectedIndex];
-            txtLocEdit.Text = arrNameLocPic[1, cboSelectGame.SelectedIndex];
+            txtNameEdit.Text = arrNameLocPic[0 , cboSelectGame.SelectedIndex];
+            txtLocEdit.Text = arrNameLocPic[1 , cboSelectGame.SelectedIndex];
             try
             {
-                Image pic = Image.FromFile(arrNameLocPic[2, cboSelectGame.SelectedIndex]);
+                Image pic = Image.FromFile(arrNameLocPic[2 , cboSelectGame.SelectedIndex]);
                 picEditPanel.Image = pic;
                 if (pic.Height > 32)
                 {
@@ -801,121 +816,14 @@ namespace projGameLauncherCsharp
                 picEditPanel.Image = null;
             }
         }
-        #endregion
 
-        #region Unimportant Methods
-
-        public static string[,] resizeArray(string[,] x)
-        {
-            MessageBox.Show("resizing");
-            string[,] increase = new string[3, x.GetLength(1) + 50];
-            string[,] backup = x;
-            x = increase;
-            Array.Copy(backup, x, backup.Length);
-            return x;
-        }
-
-        private void frmGame_MouseEnter(object sender, EventArgs e)
-        {
-            flo.Focus();
-        }
-
-        private void flo_MouseEnter(object sender, EventArgs e)
-        {
-            flo.Focus();
-        }
-
-        public void centerComponents()
-        {
-            pnlAdd.Top = (this.Height - pnlAdd.Height) / 2;
-            pnlAdd.Left = (this.Width - pnlAdd.Width) / 2;
-
-            pnlEdit.Top = (this.Height - pnlEdit.Height) / 2;
-            pnlEdit.Left = (this.Width - pnlEdit.Width) / 2;
-
-            this.Left = (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2;
-            this.Top = (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2;
-
-            optionPanel.Top = (this.Height - optionPanel.Height) / 2;
-            optionPanel.Left = (this.Width - optionPanel.Width) / 2;
-
-            lblNumOfGames.Location = new Point((this.Width - lblNumOfGames.Width) / 2, lblNumOfGames.Location.Y);
-        }
-
-        public void printArray()
-        {
-            String name = "", loc = "", pic = "";
-
-            for (int j = 0; j < arrNameLocPic.GetLength(1); j++) //collumn
-            {
-                for (int i = 0; i < arrNameLocPic.GetLength(0); i++)//row
-                {
-                    switch (i)
-                    {
-                        case 0:
-                            name += arrNameLocPic[i, j] + "\r";
-                            break;
-
-                        case 1:
-                            loc += arrNameLocPic[i, j] + "\r";
-                            break;
-
-                        case 2:
-                            pic += arrNameLocPic[i, j] + "\r";
-                            break;
-                    }
-                }
-            }
-
-            MessageBox.Show(name.Trim());
-            MessageBox.Show(loc.Trim());
-            MessageBox.Show(pic.Trim());
-        }
-
-        private void frmGame_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flo_DragEnter(object sender, DragEventArgs e)
-        {
-            e.Effect = DragDropEffects.All;
-        }
-
-        public void UpdateEditPanel()
-        {
-            cboSelectGame.Items.Clear();
-            cboSelectGame.Text = "...";
-            txtNameEdit.Text = "...";
-            txtLocEdit.Text = "...";
-            picEditPanel.Image = null;
-            picEditPanel.ImageLocation = null;
-
-            for (int i = 0; i < pointerGames; i++)
-            {
-                cboSelectGame.Items.Add(arrNameLocPic[0, i]);
-            }
-        }
-
-        #endregion
-
-        private void btnMenuOptions(object sender, EventArgs e)
+        private void btnMenuOptions(object sender , EventArgs e)
         {
             optionPanel.Show();
             toggleButtons();
         }
 
-        private void cboOption_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboOption_SelectedIndexChanged(object sender , EventArgs e)
         {
             switch (cboOption.Text)
             {
@@ -943,28 +851,134 @@ namespace projGameLauncherCsharp
             toggleButtons();
         }
 
-        private void frmGame_Click(object sender, EventArgs e)
+        private void frmGame_Click(object sender , EventArgs e)
         {
             frmMenu foo = new frmMenu();
             foo.Show();
             this.Hide();
         }
 
-        private void btnCloseMenu_Click(object sender, EventArgs e)
+        private void btnCloseMenu_Click(object sender , EventArgs e)
         {
             optionPanel.Hide();
             toggleButtons();
         }
 
-        private void btnCloseMenu_MouseEnter(object sender, EventArgs e)
+        private void btnCloseMenu_MouseEnter(object sender , EventArgs e)
         {
             btnCloseMenu.Image = Properties.Resources.xH;
         }
 
-        private void btnCloseMenu_MouseLeave(object sender, EventArgs e)
+        private void btnCloseMenu_MouseLeave(object sender , EventArgs e)
         {
             btnCloseMenu.Image = Properties.Resources.x;
         }
+
+        private void cboColour_SelectedIndexChanged(object sender , EventArgs e)
+        {
+            //Set colour and flow panel layout
+            switch (cboColour.SelectedIndex)
+            {
+                case 0:
+                    //TODO: get Red RGB colour
+                    break;
+
+                case 1:
+                    this.BackColor = Color.FromArgb(21 , 71 , 0);//green
+                    flo.BackColor = Color.FromArgb(44 , 108 , 17);//green
+                    break;
+
+                case 2:
+                    this.BackColor = Color.FromArgb(3 , 32 , 53);//blue
+                    flo.BackColor = Color.FromArgb(17 , 53 , 81);//blue
+                    break;
+
+                case 3:
+                    this.BackColor = Color.FromArgb(37 , 37 , 37);//gray
+                    flo.BackColor = Color.FromArgb(49 , 49 , 49);//gray
+
+                    break;
+
+                default:
+                    MessageBox.Show("Pick a colour");
+                    break;
+
+            }
+        }
+
+        private void frmGame_FormClosing(object sender , FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        #endregion
+
+        #region Other Methods
+
+        public static string[,] resizeArray(string[,] x)
+        {
+            MessageBox.Show("resizing");
+            string[,] increase = new string[3 , x.GetLength(1) + 50];
+            string[,] backup = x;
+            x = increase;
+            Array.Copy(backup , x , backup.Length);
+            return x;
+        }
+
+        public void CenterObjectsOnScreen(Control c)
+        {
+            c.Top = (this.Height - c.Height) / 2;
+            c.Left = (this.Width - c.Width) / 2;
+
+//            lblNumOfGames.Location = new Point((this.Width - lblNumOfGames.Width) / 2 , lblNumOfGames.Location.Y);
+        }
+
+        public void printArray()
+        {
+            String name = "", loc = "", pic = "";
+
+            for (int j = 0; j < arrNameLocPic.GetLength(1); j++) //collumn
+            {
+                for (int i = 0; i < arrNameLocPic.GetLength(0); i++)//row
+                {
+                    switch (i)
+                    {
+                        case 0:
+                            name += arrNameLocPic[i , j] + "\r";
+                            break;
+
+                        case 1:
+                            loc += arrNameLocPic[i , j] + "\r";
+                            break;
+
+                        case 2:
+                            pic += arrNameLocPic[i , j] + "\r";
+                            break;
+                    }
+                }
+            }
+
+            MessageBox.Show(name.Trim());
+            MessageBox.Show(loc.Trim());
+            MessageBox.Show(pic.Trim());
+        }
+
+        public void UpdateEditPanel()
+        {
+            cboSelectGame.Items.Clear();
+            cboSelectGame.Text = "...";
+            txtNameEdit.Text = "...";
+            txtLocEdit.Text = "...";
+            picEditPanel.Image = null;
+            picEditPanel.ImageLocation = null;
+
+            for (int i = 0; i < pointerGames; i++)
+            {
+                cboSelectGame.Items.Add(arrNameLocPic[0 , i]);
+            }
+        }
+
+        #endregion
 
     }
 }

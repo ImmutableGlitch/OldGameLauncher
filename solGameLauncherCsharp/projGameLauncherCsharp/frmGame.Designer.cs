@@ -33,7 +33,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.panelEditGame = new System.Windows.Forms.Panel();
             this.btnCloseEditPanel = new System.Windows.Forms.PictureBox();
-            this.picEditPanel = new System.Windows.Forms.PictureBox();
+            this.panelEditGameImage = new System.Windows.Forms.PictureBox();
             this.btnEditImage = new System.Windows.Forms.Button();
             this.btnLocationEdit = new System.Windows.Forms.Button();
             this.Label6 = new System.Windows.Forms.Label();
@@ -50,14 +50,14 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnAddImage = new System.Windows.Forms.Button();
             this.Label3 = new System.Windows.Forms.Label();
-            this.panelAddNewGame = new System.Windows.Forms.Panel();
+            this.panelAddGame = new System.Windows.Forms.Panel();
             this.btnCloseAddPanel = new System.Windows.Forms.PictureBox();
-            this.picAddPanel = new System.Windows.Forms.PictureBox();
+            this.panelAddGameImage = new System.Windows.Forms.PictureBox();
             this.ofdEditImage = new System.Windows.Forms.OpenFileDialog();
             this.ofdGameLocAdd = new System.Windows.Forms.OpenFileDialog();
             this.ofdGameLocEdit = new System.Windows.Forms.OpenFileDialog();
             this.ofdAddImage = new System.Windows.Forms.OpenFileDialog();
-            this.flo = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelGames = new System.Windows.Forms.FlowLayoutPanel();
             this.lblNumOfGames = new System.Windows.Forms.Label();
             this.btnGameDir = new System.Windows.Forms.PictureBox();
             this.btnEnlarge = new System.Windows.Forms.PictureBox();
@@ -65,23 +65,23 @@
             this.btnEdit = new System.Windows.Forms.PictureBox();
             this.btnAddGame = new System.Windows.Forms.PictureBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.optionPanel = new System.Windows.Forms.Panel();
+            this.panelOptions = new System.Windows.Forms.Panel();
             this.btnCloseMenu = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cboOption = new System.Windows.Forms.ComboBox();
             this.cboColour = new System.Windows.Forms.ComboBox();
             this.panelEditGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseEditPanel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEditPanel)).BeginInit();
-            this.panelAddNewGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelEditGameImage)).BeginInit();
+            this.panelAddGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseAddPanel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelAddGameImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGameDir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEnlarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddGame)).BeginInit();
-            this.optionPanel.SuspendLayout();
+            this.panelOptions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseMenu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,10 +95,11 @@
             this.Label2.TabIndex = 0;
             this.Label2.Text = "Name of Game:";
             // 
-            // pnlEdit
+            // panelEditGame
             // 
+            this.panelEditGame.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panelEditGame.Controls.Add(this.btnCloseEditPanel);
-            this.panelEditGame.Controls.Add(this.picEditPanel);
+            this.panelEditGame.Controls.Add(this.panelEditGameImage);
             this.panelEditGame.Controls.Add(this.btnEditImage);
             this.panelEditGame.Controls.Add(this.btnLocationEdit);
             this.panelEditGame.Controls.Add(this.Label6);
@@ -109,10 +110,11 @@
             this.panelEditGame.Controls.Add(this.Label5);
             this.panelEditGame.Controls.Add(this.btnSaveEditPanel);
             this.panelEditGame.Controls.Add(this.btnDeleteEditPanel);
-            this.panelEditGame.Location = new System.Drawing.Point(440, 73);
-            this.panelEditGame.Name = "pnlEdit";
+            this.panelEditGame.Location = new System.Drawing.Point(373, 72);
+            this.panelEditGame.Name = "panelEditGame";
             this.panelEditGame.Size = new System.Drawing.Size(388, 374);
             this.panelEditGame.TabIndex = 29;
+            this.panelEditGame.Visible = false;
             // 
             // btnCloseEditPanel
             // 
@@ -123,20 +125,20 @@
             this.btnCloseEditPanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCloseEditPanel.TabIndex = 18;
             this.btnCloseEditPanel.TabStop = false;
-            this.btnCloseEditPanel.Click += new System.EventHandler(this.btnCloseEditPanel_Click);
-            this.btnCloseEditPanel.MouseEnter += new System.EventHandler(this.btnCloseEditPanel_MouseEnter);
-            this.btnCloseEditPanel.MouseLeave += new System.EventHandler(this.btnCloseEditPanel_MouseLeave);
+            this.btnCloseEditPanel.Click += new System.EventHandler(this.BtnCloseEditPanel_Click);
+            this.btnCloseEditPanel.MouseEnter += new System.EventHandler(this.BtnCloseEditPanel_MouseEnter);
+            this.btnCloseEditPanel.MouseLeave += new System.EventHandler(this.BtnCloseEditPanel_MouseLeave);
             // 
-            // picEditPanel
+            // panelEditGameImage
             // 
-            this.picEditPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.picEditPanel.ImageLocation = "";
-            this.picEditPanel.Location = new System.Drawing.Point(74, 227);
-            this.picEditPanel.Name = "picEditPanel";
-            this.picEditPanel.Size = new System.Drawing.Size(230, 108);
-            this.picEditPanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEditPanel.TabIndex = 17;
-            this.picEditPanel.TabStop = false;
+            this.panelEditGameImage.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panelEditGameImage.ImageLocation = "";
+            this.panelEditGameImage.Location = new System.Drawing.Point(74, 227);
+            this.panelEditGameImage.Name = "panelEditGameImage";
+            this.panelEditGameImage.Size = new System.Drawing.Size(230, 108);
+            this.panelEditGameImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.panelEditGameImage.TabIndex = 17;
+            this.panelEditGameImage.TabStop = false;
             // 
             // btnEditImage
             // 
@@ -146,7 +148,7 @@
             this.btnEditImage.TabIndex = 16;
             this.btnEditImage.Text = "Edit Image";
             this.btnEditImage.UseVisualStyleBackColor = true;
-            this.btnEditImage.Click += new System.EventHandler(this.btnEditImage_Click);
+            this.btnEditImage.Click += new System.EventHandler(this.BtnEditImage_Click);
             // 
             // btnLocationEdit
             // 
@@ -156,7 +158,7 @@
             this.btnLocationEdit.TabIndex = 15;
             this.btnLocationEdit.Text = "Browse";
             this.btnLocationEdit.UseVisualStyleBackColor = true;
-            this.btnLocationEdit.Click += new System.EventHandler(this.btnLocationEdit_Click);
+            this.btnLocationEdit.Click += new System.EventHandler(this.BtnLocationEdit_Click);
             // 
             // Label6
             // 
@@ -175,7 +177,7 @@
             this.cboSelectGame.Name = "cboSelectGame";
             this.cboSelectGame.Size = new System.Drawing.Size(354, 21);
             this.cboSelectGame.TabIndex = 13;
-            this.cboSelectGame.SelectedIndexChanged += new System.EventHandler(this.cboSelectGame_SelectedIndexChanged);
+            this.cboSelectGame.SelectedIndexChanged += new System.EventHandler(this.CboSelectGame_SelectedIndexChanged);
             // 
             // txtLocEdit
             // 
@@ -220,7 +222,7 @@
             this.btnSaveEditPanel.TabIndex = 8;
             this.btnSaveEditPanel.Text = "Save";
             this.btnSaveEditPanel.UseVisualStyleBackColor = false;
-            this.btnSaveEditPanel.Click += new System.EventHandler(this.btnSaveEditPanel_Click);
+            this.btnSaveEditPanel.Click += new System.EventHandler(this.BtnSaveEditPanel_Click);
             // 
             // btnDeleteEditPanel
             // 
@@ -230,7 +232,7 @@
             this.btnDeleteEditPanel.TabIndex = 7;
             this.btnDeleteEditPanel.Text = "Delete";
             this.btnDeleteEditPanel.UseVisualStyleBackColor = true;
-            this.btnDeleteEditPanel.Click += new System.EventHandler(this.btnDeleteEditPanel_Click);
+            this.btnDeleteEditPanel.Click += new System.EventHandler(this.BtnDeleteEditPanel_Click);
             // 
             // btnLocationAdd
             // 
@@ -240,7 +242,7 @@
             this.btnLocationAdd.TabIndex = 16;
             this.btnLocationAdd.Text = "Browse";
             this.btnLocationAdd.UseVisualStyleBackColor = true;
-            this.btnLocationAdd.Click += new System.EventHandler(this.btnLocationAdd_Click);
+            this.btnLocationAdd.Click += new System.EventHandler(this.BtnLocationAdd_Click);
             // 
             // btnDoneAddPanel
             // 
@@ -251,7 +253,7 @@
             this.btnDoneAddPanel.TabIndex = 6;
             this.btnDoneAddPanel.Text = "Done";
             this.btnDoneAddPanel.UseVisualStyleBackColor = false;
-            this.btnDoneAddPanel.Click += new System.EventHandler(this.btnDoneAddPanel_Click);
+            this.btnDoneAddPanel.Click += new System.EventHandler(this.BtnDoneAddPanel_Click);
             // 
             // txtLocation
             // 
@@ -275,7 +277,7 @@
             this.btnAddImage.TabIndex = 2;
             this.btnAddImage.Text = "Add Image";
             this.btnAddImage.UseVisualStyleBackColor = true;
-            this.btnAddImage.Click += new System.EventHandler(this.btnAddImage_Click);
+            this.btnAddImage.Click += new System.EventHandler(this.BtnAddImage_Click);
             // 
             // Label3
             // 
@@ -287,21 +289,23 @@
             this.Label3.TabIndex = 1;
             this.Label3.Text = "Location";
             // 
-            // panelAddNewGame
+            // panelAddGame
             // 
-            this.panelAddNewGame.Controls.Add(this.btnCloseAddPanel);
-            this.panelAddNewGame.Controls.Add(this.btnLocationAdd);
-            this.panelAddNewGame.Controls.Add(this.picAddPanel);
-            this.panelAddNewGame.Controls.Add(this.btnDoneAddPanel);
-            this.panelAddNewGame.Controls.Add(this.txtLocation);
-            this.panelAddNewGame.Controls.Add(this.txtName);
-            this.panelAddNewGame.Controls.Add(this.btnAddImage);
-            this.panelAddNewGame.Controls.Add(this.Label3);
-            this.panelAddNewGame.Controls.Add(this.Label2);
-            this.panelAddNewGame.Location = new System.Drawing.Point(27, 106);
-            this.panelAddNewGame.Name = "panelAddNewGame";
-            this.panelAddNewGame.Size = new System.Drawing.Size(388, 317);
-            this.panelAddNewGame.TabIndex = 28;
+            this.panelAddGame.BackColor = System.Drawing.Color.SteelBlue;
+            this.panelAddGame.Controls.Add(this.btnCloseAddPanel);
+            this.panelAddGame.Controls.Add(this.btnLocationAdd);
+            this.panelAddGame.Controls.Add(this.panelAddGameImage);
+            this.panelAddGame.Controls.Add(this.btnDoneAddPanel);
+            this.panelAddGame.Controls.Add(this.txtLocation);
+            this.panelAddGame.Controls.Add(this.txtName);
+            this.panelAddGame.Controls.Add(this.btnAddImage);
+            this.panelAddGame.Controls.Add(this.Label3);
+            this.panelAddGame.Controls.Add(this.Label2);
+            this.panelAddGame.Location = new System.Drawing.Point(4, 42);
+            this.panelAddGame.Name = "panelAddGame";
+            this.panelAddGame.Size = new System.Drawing.Size(388, 317);
+            this.panelAddGame.TabIndex = 28;
+            this.panelAddGame.Visible = false;
             // 
             // btnCloseAddPanel
             // 
@@ -312,54 +316,54 @@
             this.btnCloseAddPanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCloseAddPanel.TabIndex = 17;
             this.btnCloseAddPanel.TabStop = false;
-            this.btnCloseAddPanel.Click += new System.EventHandler(this.btnCloseAddPanel_Click);
-            this.btnCloseAddPanel.MouseEnter += new System.EventHandler(this.btnCloseAddPanel_MouseEnter);
-            this.btnCloseAddPanel.MouseLeave += new System.EventHandler(this.btnCloseAddPanel_MouseLeave);
+            this.btnCloseAddPanel.Click += new System.EventHandler(this.BtnCloseAddPanel_Click);
+            this.btnCloseAddPanel.MouseEnter += new System.EventHandler(this.BtnCloseAddPanel_MouseEnter);
+            this.btnCloseAddPanel.MouseLeave += new System.EventHandler(this.BtnCloseAddPanel_MouseLeave);
             // 
-            // picAddPanel
+            // panelAddGameImage
             // 
-            this.picAddPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.picAddPanel.ImageLocation = "E:\\Programming\\Git\\repos\\solBetterExplorer\\projBetterExplorer\\bin\\Debug\\folder.pn" +
+            this.panelAddGameImage.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panelAddGameImage.ImageLocation = "E:\\Programming\\Git\\repos\\solBetterExplorer\\projBetterExplorer\\bin\\Debug\\folder.pn" +
     "g";
-            this.picAddPanel.Location = new System.Drawing.Point(74, 178);
-            this.picAddPanel.Name = "picAddPanel";
-            this.picAddPanel.Size = new System.Drawing.Size(230, 108);
-            this.picAddPanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAddPanel.TabIndex = 7;
-            this.picAddPanel.TabStop = false;
+            this.panelAddGameImage.Location = new System.Drawing.Point(74, 178);
+            this.panelAddGameImage.Name = "panelAddGameImage";
+            this.panelAddGameImage.Size = new System.Drawing.Size(230, 108);
+            this.panelAddGameImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.panelAddGameImage.TabIndex = 7;
+            this.panelAddGameImage.TabStop = false;
             // 
             // ofdEditImage
             // 
             this.ofdEditImage.InitialDirectory = "\\";
-            this.ofdEditImage.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdEditImage_FileOk);
+            this.ofdEditImage.FileOk += new System.ComponentModel.CancelEventHandler(this.OfdEditImage_FileOk);
             // 
             // ofdGameLocAdd
             // 
             this.ofdGameLocAdd.InitialDirectory = "C:\\";
-            this.ofdGameLocAdd.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdGameLocAdd_FileOk);
+            this.ofdGameLocAdd.FileOk += new System.ComponentModel.CancelEventHandler(this.OfdGameLocAdd_FileOk);
             // 
             // ofdGameLocEdit
             // 
             this.ofdGameLocEdit.InitialDirectory = "C:\\";
-            this.ofdGameLocEdit.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdGameLocEdit_FileOk);
+            this.ofdGameLocEdit.FileOk += new System.ComponentModel.CancelEventHandler(this.OfdGameLocEdit_FileOk);
             // 
             // ofdAddImage
             // 
             this.ofdAddImage.InitialDirectory = "\\";
-            this.ofdAddImage.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdAddImage_FileOk);
+            this.ofdAddImage.FileOk += new System.ComponentModel.CancelEventHandler(this.OfdAddImage_FileOk);
             // 
-            // flo
+            // panelGames
             // 
-            this.flo.AllowDrop = true;
-            this.flo.BackColor = System.Drawing.Color.Lavender;
-            this.flo.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flo.Location = new System.Drawing.Point(12, 49);
-            this.flo.Name = "flo";
-            this.flo.Size = new System.Drawing.Size(826, 419);
-            this.flo.TabIndex = 31;
-            this.flo.DragDrop += new System.Windows.Forms.DragEventHandler(this.flo_DragDrop);
-            this.flo.DragEnter += new System.Windows.Forms.DragEventHandler(this.flo_DragEnter);
-            this.flo.MouseEnter += new System.EventHandler(this.flo_MouseEnter);
+            this.panelGames.AllowDrop = true;
+            this.panelGames.AutoScroll = true;
+            this.panelGames.BackColor = System.Drawing.Color.Lavender;
+            this.panelGames.Location = new System.Drawing.Point(12, 49);
+            this.panelGames.Name = "panelGames";
+            this.panelGames.Size = new System.Drawing.Size(826, 419);
+            this.panelGames.TabIndex = 31;
+            this.panelGames.DragDrop += new System.Windows.Forms.DragEventHandler(this.PanelGames_DragDrop);
+            this.panelGames.DragEnter += new System.Windows.Forms.DragEventHandler(this.PanelGames_DragEnter);
+            this.panelGames.MouseEnter += new System.EventHandler(this.PanelGames_MouseEnter);
             // 
             // lblNumOfGames
             // 
@@ -383,9 +387,9 @@
             this.btnGameDir.TabIndex = 36;
             this.btnGameDir.TabStop = false;
             this.btnGameDir.Visible = false;
-            this.btnGameDir.Click += new System.EventHandler(this.btnGameDir_Click);
-            this.btnGameDir.MouseEnter += new System.EventHandler(this.btnGameDir_MouseEnter);
-            this.btnGameDir.MouseLeave += new System.EventHandler(this.btnGameDir_MouseLeave);
+            this.btnGameDir.Click += new System.EventHandler(this.BtnGameDir_Click);
+            this.btnGameDir.MouseEnter += new System.EventHandler(this.BtnGameDir_MouseEnter);
+            this.btnGameDir.MouseLeave += new System.EventHandler(this.BtnGameDir_MouseLeave);
             // 
             // btnEnlarge
             // 
@@ -396,9 +400,9 @@
             this.btnEnlarge.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnEnlarge.TabIndex = 35;
             this.btnEnlarge.TabStop = false;
-            this.btnEnlarge.Click += new System.EventHandler(this.btnEnlarge_Click);
-            this.btnEnlarge.MouseEnter += new System.EventHandler(this.btnEnlarge_MouseEnter);
-            this.btnEnlarge.MouseLeave += new System.EventHandler(this.btnEnlarge_MouseLeave);
+            this.btnEnlarge.Click += new System.EventHandler(this.BtnEnlarge_Click);
+            this.btnEnlarge.MouseEnter += new System.EventHandler(this.BtnEnlarge_MouseEnter);
+            this.btnEnlarge.MouseLeave += new System.EventHandler(this.BtnEnlarge_MouseLeave);
             // 
             // btnMenu
             // 
@@ -409,9 +413,9 @@
             this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnMenu.TabIndex = 34;
             this.btnMenu.TabStop = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenuOptions);
-            this.btnMenu.MouseEnter += new System.EventHandler(this.btnMenu_MouseEnter);
-            this.btnMenu.MouseLeave += new System.EventHandler(this.btnMenu_MouseLeave);
+            this.btnMenu.Click += new System.EventHandler(this.BtnMenuOptions);
+            this.btnMenu.MouseEnter += new System.EventHandler(this.BtnMenu_MouseEnter);
+            this.btnMenu.MouseLeave += new System.EventHandler(this.BtnMenu_MouseLeave);
             // 
             // btnEdit
             // 
@@ -422,9 +426,9 @@
             this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnEdit.TabIndex = 33;
             this.btnEdit.TabStop = false;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            this.btnEdit.MouseEnter += new System.EventHandler(this.btnEdit_MouseEnter);
-            this.btnEdit.MouseLeave += new System.EventHandler(this.btnEdit_MouseLeave);
+            this.btnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
+            this.btnEdit.MouseEnter += new System.EventHandler(this.BtnEdit_MouseEnter);
+            this.btnEdit.MouseLeave += new System.EventHandler(this.BtnEdit_MouseLeave);
             // 
             // btnAddGame
             // 
@@ -435,9 +439,9 @@
             this.btnAddGame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnAddGame.TabIndex = 32;
             this.btnAddGame.TabStop = false;
-            this.btnAddGame.Click += new System.EventHandler(this.btnAddGame_Click);
-            this.btnAddGame.MouseEnter += new System.EventHandler(this.btnAddGame_MouseEnter);
-            this.btnAddGame.MouseLeave += new System.EventHandler(this.btnAddGame_MouseLeave);
+            this.btnAddGame.Click += new System.EventHandler(this.BtnAddGame_Click);
+            this.btnAddGame.MouseEnter += new System.EventHandler(this.BtnAddGame_MouseEnter);
+            this.btnAddGame.MouseLeave += new System.EventHandler(this.BtnAddGame_MouseLeave);
             // 
             // imageList1
             // 
@@ -445,17 +449,17 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // optionPanel
+            // panelOptions
             // 
-            this.optionPanel.BackColor = System.Drawing.Color.Blue;
-            this.optionPanel.Controls.Add(this.btnCloseMenu);
-            this.optionPanel.Controls.Add(this.label1);
-            this.optionPanel.Controls.Add(this.cboOption);
-            this.optionPanel.Location = new System.Drawing.Point(908, 103);
-            this.optionPanel.Name = "optionPanel";
-            this.optionPanel.Size = new System.Drawing.Size(351, 130);
-            this.optionPanel.TabIndex = 37;
-            this.optionPanel.Visible = false;
+            this.panelOptions.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panelOptions.Controls.Add(this.btnCloseMenu);
+            this.panelOptions.Controls.Add(this.label1);
+            this.panelOptions.Controls.Add(this.cboOption);
+            this.panelOptions.Location = new System.Drawing.Point(497, 348);
+            this.panelOptions.Name = "panelOptions";
+            this.panelOptions.Size = new System.Drawing.Size(351, 130);
+            this.panelOptions.TabIndex = 37;
+            this.panelOptions.Visible = false;
             // 
             // btnCloseMenu
             // 
@@ -466,14 +470,14 @@
             this.btnCloseMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCloseMenu.TabIndex = 19;
             this.btnCloseMenu.TabStop = false;
-            this.btnCloseMenu.Click += new System.EventHandler(this.btnCloseMenu_Click);
-            this.btnCloseMenu.MouseEnter += new System.EventHandler(this.btnCloseMenu_MouseEnter);
-            this.btnCloseMenu.MouseLeave += new System.EventHandler(this.btnCloseMenu_MouseLeave);
+            this.btnCloseMenu.Click += new System.EventHandler(this.BtnCloseMenu_Click);
+            this.btnCloseMenu.MouseEnter += new System.EventHandler(this.BtnCloseMenu_MouseEnter);
+            this.btnCloseMenu.MouseLeave += new System.EventHandler(this.BtnCloseMenu_MouseLeave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Blue;
+            this.label1.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.label1.Location = new System.Drawing.Point(59, 29);
@@ -493,7 +497,7 @@
             this.cboOption.Name = "cboOption";
             this.cboOption.Size = new System.Drawing.Size(310, 21);
             this.cboOption.TabIndex = 0;
-            this.cboOption.SelectedIndexChanged += new System.EventHandler(this.cboOption_SelectedIndexChanged);
+            this.cboOption.SelectedIndexChanged += new System.EventHandler(this.CboOption_SelectedIndexChanged);
             // 
             // cboColour
             // 
@@ -507,49 +511,50 @@
             this.cboColour.Name = "cboColour";
             this.cboColour.Size = new System.Drawing.Size(121, 21);
             this.cboColour.TabIndex = 38;
-            this.cboColour.SelectedIndexChanged += new System.EventHandler(this.cboColour_SelectedIndexChanged);
+            this.cboColour.SelectedIndexChanged += new System.EventHandler(this.CboColour_SelectedIndexChanged);
             // 
             // frmGame
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkBlue;
-            this.ClientSize = new System.Drawing.Size(1289, 478);
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ClientSize = new System.Drawing.Size(849, 478);
+            this.Controls.Add(this.panelOptions);
             this.Controls.Add(this.cboColour);
-            this.Controls.Add(this.optionPanel);
             this.Controls.Add(this.btnGameDir);
             this.Controls.Add(this.btnEnlarge);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAddGame);
             this.Controls.Add(this.panelEditGame);
-            this.Controls.Add(this.panelAddNewGame);
-            this.Controls.Add(this.flo);
+            this.Controls.Add(this.panelAddGame);
+            this.Controls.Add(this.panelGames);
             this.Controls.Add(this.lblNumOfGames);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "frmGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game Launcher";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGame_FormClosing);
-            this.Load += new System.EventHandler(this.frmGame_Load);
-            this.DoubleClick += new System.EventHandler(this.frmGame_Click);
-            this.MouseEnter += new System.EventHandler(this.frmGame_MouseEnter);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmGame_FormClosing);
+            this.Load += new System.EventHandler(this.FrmGame_Load);
+            this.DoubleClick += new System.EventHandler(this.FrmGame_Click);
+            this.MouseEnter += new System.EventHandler(this.FrmGame_MouseEnter);
             this.panelEditGame.ResumeLayout(false);
             this.panelEditGame.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseEditPanel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEditPanel)).EndInit();
-            this.panelAddNewGame.ResumeLayout(false);
-            this.panelAddNewGame.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelEditGameImage)).EndInit();
+            this.panelAddGame.ResumeLayout(false);
+            this.panelAddGame.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseAddPanel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAddPanel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelAddGameImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGameDir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEnlarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddGame)).EndInit();
-            this.optionPanel.ResumeLayout(false);
-            this.optionPanel.PerformLayout();
+            this.panelOptions.ResumeLayout(false);
+            this.panelOptions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseMenu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -564,7 +569,7 @@
         internal System.Windows.Forms.PictureBox btnAddGame;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Panel panelEditGame;
-        internal System.Windows.Forms.PictureBox picEditPanel;
+        internal System.Windows.Forms.PictureBox panelEditGameImage;
         internal System.Windows.Forms.Button btnEditImage;
         internal System.Windows.Forms.Button btnLocationEdit;
         internal System.Windows.Forms.Label Label6;
@@ -576,24 +581,24 @@
         internal System.Windows.Forms.Button btnSaveEditPanel;
         internal System.Windows.Forms.Button btnDeleteEditPanel;
         internal System.Windows.Forms.Button btnLocationAdd;
-        internal System.Windows.Forms.PictureBox picAddPanel;
+        internal System.Windows.Forms.PictureBox panelAddGameImage;
         internal System.Windows.Forms.Button btnDoneAddPanel;
         internal System.Windows.Forms.TextBox txtLocation;
         internal System.Windows.Forms.TextBox txtName;
         internal System.Windows.Forms.Button btnAddImage;
         internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.Panel panelAddNewGame;
+        internal System.Windows.Forms.Panel panelAddGame;
         internal System.Windows.Forms.OpenFileDialog ofdEditImage;
         internal System.Windows.Forms.OpenFileDialog ofdGameLocAdd;
         internal System.Windows.Forms.OpenFileDialog ofdGameLocEdit;
         internal System.Windows.Forms.OpenFileDialog ofdAddImage;
-        internal System.Windows.Forms.FlowLayoutPanel flo;
+        internal System.Windows.Forms.FlowLayoutPanel panelGames;
         internal System.Windows.Forms.Label lblNumOfGames;
         internal System.Windows.Forms.PictureBox btnGameDir;
         private System.Windows.Forms.PictureBox btnCloseAddPanel;
         private System.Windows.Forms.PictureBox btnCloseEditPanel;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Panel optionPanel;
+        private System.Windows.Forms.Panel panelOptions;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboOption;
         private System.Windows.Forms.PictureBox btnCloseMenu;

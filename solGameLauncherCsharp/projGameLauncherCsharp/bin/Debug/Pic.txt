@@ -1,6 +1,1 @@
-
-
-
-
-
-E:\Hobbies\Programming\Git\repos\MyLaunchers\pcgamelauncher\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\icons\Tech 5th June 2015.bmp
+E:\Hobbies\Programming\DotNET\Projects\MyLaunchers\pcgamelauncher\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\icons\Frm Game.bmp

@@ -143,6 +143,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game.cs" />
     <Compile Include="RecursiveDirSearch.cs" />
     <Compile Include="frmIconExtract.cs">
       <SubType>Form</SubType>

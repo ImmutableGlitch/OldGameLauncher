@@ -387,5 +387,3 @@ E:\Hobbies\Programming\DotNET\Projects\MyLaunchers\pcgamelauncher\solGameLaunche
 E:\Hobbies\Programming\DotNET\Projects\MyLaunchers\pcgamelauncher\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.csproj.CoreCompileInputs.cache
 E:\Hobbies\Programming\DotNET\Projects\MyLaunchers\pcgamelauncher\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.exe
 E:\Hobbies\Programming\DotNET\Projects\MyLaunchers\pcgamelauncher\solGameLauncherCsharp\projGameLauncherCsharp\obj\Debug\projGameLauncherCsharp.pdb
-E:\Hobbies\Programming\DotNET\Projects\MyLaunchers\pcgamelauncher\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe.CodeAnalysisLog.xml
-E:\Hobbies\Programming\DotNET\Projects\MyLaunchers\pcgamelauncher\solGameLauncherCsharp\projGameLauncherCsharp\bin\Debug\projGameLauncherCsharp.exe.lastcodeanalysissucceeded
